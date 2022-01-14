@@ -11,44 +11,44 @@ body {
   padding: 3%;
   text-align-last: center;
   font-size: 40px;
-  
+
 }
+
 h3 {
   padding-left: 40px;
 }
 
- p{
+p {
   padding-left: 40px;
- }
+}
 
- .flex-list {
-   margin-top: 5%;
-   margin-bottom: 10%;
- }
-
- 
-
-.flex-list li
- {
-  display: flex;
-  flex-wrap: wrap;
-  align-items:flex-start;
+.flex-list {
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 
-.flex-list > li:not(:last-child) {
+
+.flex-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+
+.flex-list>li:not(:last-child) {
   margin-bottom: 50px;
 }
 
-.flex-list li label
-{
-  
+.flex-list li label {
+
   text-transform: uppercase;
 }
 
- 
 
-th, td {
+
+th,
+td {
   padding: 40px;
   text-align: left;
   min-width: 1rem;
@@ -61,21 +61,41 @@ th, td {
 }
 
 .input-box {
-  width:50px;
+  width: 50px;
 }
 
 .button {
-width:fit-content;
-margin-left: 40%;
-margin-top: 2.5%;
-margin-bottom: 2.5;
-}  
+  width: fit-content;
+  margin-left: 40%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5;
+}
 
 .table-2 {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 12px;
-    
-  }
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
 
- 
+}
+
+.total {
+  font-size: 20px;
+  width:fit-content;
+  height:fit-content;
+}
+
+a .submit-order {
+  width: 20%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5;
+  font-size: 20px;
+  position: relative;
+  margin-left: 40%;
+  background-color: white;
+}
+
+.approve {
+  padding-left: 40px;
+  font-size: large;
+  
+}
