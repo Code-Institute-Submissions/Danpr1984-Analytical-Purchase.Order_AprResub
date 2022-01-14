@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purchase Assistant</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <header class="style-header">Hola</header>
-    <div class="style-intro">
-        <form action="POST" class="style-form">
-            <label for="date">Period</label>
-            <input type="text" class="text">
-            <label for="date">Expected number of guests</label>
-            <input type="text" class="text">
-            <p>On Hand</p>
-            <label for="date">3UP STEAK</label>
-            <input type="text" class="text">
-            <label for="date">SHRIMP</label>
-            <input type="text" class="text">
-            <label for="date">FISH 1 1/2</label>
-            <input type="text" class="text">
-            <label for="date">FISH FILET</label>
-            <input type="text" class="text">
-            <label for="date">CHICKEN</label>
-            <input type="text" class="text">
-            <input type="button"> 
 
+<body>
+    <header class="style-header">Welcome!</header>
+    <div class="form-container">
+        <h3>Step 1</h3>
+        <p class="message">Please fill in the requested information to help you calculate your order</p>
+
+        <form action="POST">
+            <ul class="flex-list">
+                <li><label for="date">Period</label>
+                    <input type="text" class="text"></li>
+                <li><label for="date">Expected number of guests</label>
+                    <input type="number" class="input-box" class="text"></li>
+                <li><label for="date">Order Created By</label>
+                    <input type="text" class="text"></li>
+            </ul>
         </form>
     </div>
+    <div>
+        <h3>Step 2</h3>
+        <p class="message">Tell us how much product you have on hand</p>
+        <form action="" class="">
+            <table class=table-1>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Unit</th>
+                        <th>On Hand</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shrimp</td>
+                        <td>Lb</td>
+                        <td><input type="number" class="input-box" id="shrimp"></td>
+                    </tr>
+                    <tr>
+                        <td>Red snapper filet</td>
+                        <td>Lb</td>
+                        <td><input type="number" class="input-box" id="red-snapper" required></td>
+                    </tr>
+                    <tr>
+                        <td>Sea Bass</td>
+                        <td>Lb</td>
+                        <td><input type="number" class="input-box" id="sea-bass" required></td>
+                    </tr>
+                    <tr>
+                        <td>Chicken</td>
+                        <td>Lb</td>
+                        <td><input type="number" class="input-box" id="chicken" required></td>
+                    </tr>
+                    <tr>
+                        <td>3up Rib Eye</td>
+                        <td>Lb</td>
+                        <td><input type="number" class="input-box" id="3up" required></td>
+                    </tr>
+                </tbody>
 
-    
+            </table>
+            <a href="./order.html">
+                <input type="button" class="button" name="continue" id="continue" value="Calculate Order" required>
+                <script src="assets/../js/script.js"></script>
+            </a>
+        </form>
+    </div>
 </body>
+
 </html>
