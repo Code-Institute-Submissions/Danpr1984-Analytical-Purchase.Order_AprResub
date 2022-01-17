@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purchase Assistant</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="#">
 </head>
 
 <body>
@@ -15,65 +16,66 @@
         <h3>Step 1</h3>
         <p class="message">Please fill in the requested information to help you calculate your order</p>
 
-        <form action="POST">
+        <form method="POST" action="calculateOrder">
             <ul class="flex-list">
                 <li><label for="date">Period</label>
                     <input type="text" class="text"></li>
                 <li><label for="date">Expected number of guests</label>
-                    <input type="number" class="input-box" class="text"></li>
+                    <input type="number" class="input-box" class="text" id="guests-number"></li>
                 <li><label for="date">Order Created By</label>
                     <input type="text" class="text"></li>
             </ul>
-        </form>
+
     </div>
     <div>
         <h3>Step 2</h3>
         <p class="message">Tell us how much product you have on hand</p>
-        <form action="" class="">
-            <table class=table-1>
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Unit</th>
-                        <th>On Hand</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Shrimp</td>
-                        <td>Lb</td>
-                        <td><input type="number" class="input-box" id="operand1-shrimp"></td>
-                    </tr>
-                    <tr>
-                        <td>Red snapper filet</td>
-                        <td>Lb</td>
-                        <td><input type="number" class="input-box" id="operand1-red-snapper" required></td>
-                    </tr>
-                    <tr>
-                        <td>Sea Bass</td>
-                        <td>Lb</td>
-                        <td><input type="number" class="input-box" id="operand1-sea-bass" required></td>
-                    </tr>
-                    <tr>
-                        <td>Chicken</td>
-                        <td>Lb</td>
-                        <td><input type="number" class="input-box" id="operand1-chicken" required></td>
-                    </tr>
-                    <tr>
-                        <td>3up Rib Eye</td>
-                        <td>Lb</td>
-                        <td><input type="number" class="input-box" id="operand1-3up" required></td>
-                    </tr>
-                </tbody>
 
-            </table>
-            <a href="./order.html">
-                <input type="button" class="button" name="continue" id="continue" value="Calculate Order">
-                <script src="assets/../js/script.js"></script>
-            </a>
+        <table class=table-1>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Unit</th>
+                    <th>On Hand</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shrimp</td>
+                    <td>Lb</td>
+                    <td><input type="number" class="input-box" id="operand1-shrimp"></td>
+                </tr>
+                <tr>
+                    <td>Red snapper filet</td>
+                    <td>Lb</td>
+                    <td><input type="number" class="input-box" id="operand1-snapper" required></td>
+                </tr>
+                <tr>
+                    <td>Sea Bass</td>
+                    <td>Lb</td>
+                    <td><input type="number" class="input-box" id="operand1-seabass" required></td>
+                </tr>
+                <tr>
+                    <td>Chicken</td>
+                    <td>Lb</td>
+                    <td><input type="number" class="input-box" id="operand1-chicken" required></td>
+                </tr>
+                <tr>
+                    <td>3up Rib Eye</td>
+                    <td>Lb</td>
+                    <td><input type="number" class="input-box" id="operand1-3up" required></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <a href="./order.html">
+            <input type="button" class="button" name="continue" id="continue" value="Calculate Order">
+            
+        </a>
         </form>
-        
+
     </div>
+    <script src="assets/../js/script.js"></script>
 </body>
 
 </html>
