@@ -15,18 +15,18 @@
     <div class="form-container">
         <h3>Step 1</h3>
         <p class="message">Please fill in the requested information to help you calculate your order</p>
-
-        <form method="POST" action="calculateOrder">
-            <ul class="flex-list">
-                <li><label for="date">Period</label>
-                    <input type="text" class="text" id="date" required></li>
-                <li><label for="date" required>Expected number of guests</label>
-                    <input type="number" class="input-box" class="text" id="guests-number" required></li>
-                <li><label for="date">Order Created By</label>
-                    <input type="text" class="text" id="created-by" required></li>
-            </ul>
-
     </div>
+
+    <ul class="flex-list">
+        <li><label for="date">Period</label>
+            <input type="text" class="text" id="date" required></li>
+        <li><label for="date" required>Expected number of guests</label>
+            <input type="number" class="input-box" class="text" id="guests-number" required></li>
+        <li><label for="date">Order Created By</label>
+            <input type="text" class="text" id="created-by" required></li>
+    </ul>
+
+
     <div>
         <h3>Step 2</h3>
         <p class="message">Tell us how much product you have on hand</p>
@@ -68,14 +68,14 @@
             </tbody>
 
         </table>
-        <a href="./order.html">
-            <input type="button" class="button" name="continue" id="continue" value="Calculate Order">
-            
-        </a>
-        </form>
+
+        <button class="button" onclick="Continue()" id="continue">Calculate Order</button>
+
+
+
 
     </div>
-    <script src="assets/../js/script.js"></script>
+    <script src="assets/../js/index.js"></script>
 </body>
 
 </html>
