@@ -1,7 +1,7 @@
-let newList = $_GETContinue();
 
 
-/**const shrimp = {
+
+const shrimp = {
     share: 0.3,
     weight: 0.33,
     unitCost: 5
