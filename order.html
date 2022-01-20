@@ -17,110 +17,149 @@
             <input type="button" name="continue" id="go-back" value="Go Back">
         </a>
         <ul class="flex-list">
-            <li><label for="date" id="date-p2">Period</label>
-                <input type="text" class="text"></li>
+            <li><label for="date">Period</label>
+                <input type="text" class="text" id="date-p2" disabled></li>
             <li><label for="date">Expected number of guests</label>
-                <input type="number" class="input-box" class="text" id="guests-numberp2"></li>
+                <input type="number" class="input-box" class="text" id="guests-numberp2" disabled></li>
             <li><label for="date">Order Created By</label>
-                <input type="text" class="text" id="created-byp2"></li>
+                <input type="text" class="text" id="created-byp2" disabled></li>
         </ul>
     </div>
     <div>
 
-        <form action="" class="order-table">
-            <table class="table-2">
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Unit</th>
-                        <th>On Hand</th>
-                        <th>Estimated sales per dish</th>
-                        <th>Amount per dish</th>
-                        <th>Estimated sales per Lb</th>
-                        <th>Order amount</th>
-                        <th>Unit cost</th>
-                        <th>Total cost</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Shrimp</td>
-                        <td>Lb</td>
-                        <td><input type="number" class="input-box" id="operand2-shrimp" min="0" max="20" value=""></td>
-                        <td><input type="number" class="input-box" id="operand3-shrimp" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand4-shrimp" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand5-shrimp" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand6-shrimp" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand7-shrimp" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand8-shrimp" min="0" max="20"></td>
-                    </tr>
-                    <tr>
-                        <td>Red snapper</td>
-                        <td>Lb</td>
-                        <td><input type="number" class="input-box" id="operand2-redsnapper" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand3-redsnapper" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand4-redsnapper" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand5-redsnapper" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand6-redsnapper" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand7-redsnapper" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand8-redsnapper" min="0" max="20"></td>
-                    </tr>
-                    <tr>
-                        <td>Sea bass</td>
-                        <td>Lb</td>
-                        <td><input type="number" class="input-box" id="operand2-seabass" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand3-seabass" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand4-seabass" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand5-seabass" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand6-seabass" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand7-seabass" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand8-seabass" min="0" max="20"></td>
-                    </tr>
-                    <tr>
-                        <td>Chicken</td>
-                        <td>Lb</td>
-                        <td><input type="number" class="input-box" id="operand2-chicken" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand3-chicken" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand4-chicken" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand5-chicken" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand6-chicken" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand7-chicken" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand8-chicken" min="0" max="20"></td>
-                    </tr>
-                    <tr>
-                        <td>Rib Eye</td>
-                        <td>Lb</td>
-                        <td><input type="number" class="input-box" id="operand2-ribeye" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand3-ribeye" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand4-ribeye" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand5-ribeye" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand6-ribeye" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand7-ribeye" min="0" max="20"></td>
-                        <td><input type="number" class="input-box" id="operand8-ribeye" min="0" max="20"></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="total">Total Amount</td>
-                        <td><input type="number" class="input-box" id=""></td>
-                    </tr>
+    </div>
+    <form action="" class="order-table">
+        <table class="table-2">
+            <thead>
+                <tr>
+                    <th>Product Unit (Lb)</th>
+                    <!--<th>Unit</th>-->
+                    <th>On Hand</th>
+                    <th>Dishes (per item)</th>
+                    <th>Ounces (per dish)</th>
+                    <th>QTY needed</th>
+                    <th>Order Amount</th>
+                    <th>Unit cost</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shrimp</td>
+                    <!--<td>Lb</td>-->
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand2-shrimp" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand3-shrimp" min="0"
+                                max="20" disabled name="currency">dishes</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand4-shrimp" min="0"
+                                max="20" disabled name="currency">oz</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand5-shrimp" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand6-shrimp" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand7-shrimp" min="0"
+                                max="20" disabled name="currency">$</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand8-shrimp" min="0"
+                                max="20" disabled name="currency">$</span></td>
+                </tr>
+                <tr>
+                    <td>Red snapper</td>
+                    <!--<td>Lb</td>-->
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand2-redsnapper" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand3-redsnapper" min="0"
+                                max="20" disabled name="currency">dishes</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand4-redsnapper" min="0"
+                                max="20" disabled name="currency">oz</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand5-redsnapper" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand6-redsnapper" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand7-redsnapper" min="0"
+                                max="20" disabled name="currency">$</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand8-redsnapper" min="0"
+                                max="20" disabled name="currency">$</span></td>
+                </tr>
+                <tr>
+                    <td>Sea bass</td>
+                    <!--<td>Lb</td>-->
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand2-seabass" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand3-seabass" min="0"
+                                max="20" disabled name="currency">dishes</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand4-seabass" min="0"
+                                max="20" disabled name="currency">oz</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand5-seabass" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand6-seabass" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand7-seabass" min="0"
+                                max="20" disabled name="currency">$</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand8-seabass" min="0"
+                                max="20" disabled name="currency">$</span></td>
+                </tr>
+                <tr>
+                    <td>Chicken</td>
+                    <!--<td>Lb</td>-->
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand2-chicken" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand3-chicken" min="0"
+                                max="20" disabled name="currency">dishes</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand4-chicken" min="0"
+                                max="20" disabled name="currency">oz</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand5-chicken" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand6-chicken" min="0"
+                                max="20" disabled name="currency">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand7-chicken" min="0"
+                                max="20" disabled name="currency">$</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand8-chicken" min="0"
+                                max="20" disabled name="currency">$</span></td>
+                </tr>
+                <tr>
+                    <td>Rib Eye</td>
+                    <!--<td>Lb</td>-->
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand2-ribeye" min="0"
+                                max="20" disabled name="unit">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand3-ribeye" min="0"
+                                max="20" disabled name="unit">dishes</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand4-ribeye" min="0"
+                                max="20" disabled name="unit">oz</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand5-ribeye" min="0"
+                                max="20" disabled name="unit">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand6-ribeye" min="0"
+                                max="20" disabled name="unit">lb</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand7-ribeye" min="0"
+                                max="20" disabled name="currency">$</span></td>
+                    <td><span class="unitinput"><input type="number" class="input-box" id="operand8-ribeye" min="0"
+                                max="20" disabled name="currency">$</span></td>
 
-                </tbody>
-            </table>
-        </form>
-        <a href="./approval.html">
-            <input type="button" name="submit-order" class="submit-order" value="Submit Order">
-            <script src="assets/../js/order.js"></script>
-        </a>
-    </div>    
+                </tr>
+                <tr>
+                    <td></td>
 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="total">Total</td>
 
+                    <td><span class="unitinput"><input type="number" class="input-box" id="total-amount" disabled
+                                name="currency">$</span></td>
+                    <!--<input type="number" class="input-box" id="total-amount" disabled></td>-->
+                </tr>
 
+            </tbody>
+        </table>
+    </form>
+
+    <a href="./approval.html">
+        <input type="button" name="submit-order" class="submit-order" value="Submit Order">
+
+        <script src="assets/../js/order.js"></script>
+    </a>
+    </div>
 
 </body>
 
