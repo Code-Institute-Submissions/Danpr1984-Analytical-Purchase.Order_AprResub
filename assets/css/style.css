@@ -42,10 +42,12 @@ p {
 
 .flex-list li label {
 
-  text-transform: uppercase;
+  text-transform:capitalize;
 }
 
-
+.text {
+  margin-left: 10px;
+}
 
 th,
 td {
@@ -61,7 +63,9 @@ td {
 }
 
 .input-box {
-  width: 50px;
+  width: 45px;
+  background-color: rgb(245, 245, 248);
+  border: 1px solid black;
 }
 
 .button {
@@ -75,13 +79,25 @@ td {
   border-collapse: collapse;
   width: 100%;
   font-size: 12px;
+  text-align: center;
 
 }
 
 .total {
-  font-size: 20px;
-  width:fit-content;
-  height:fit-content;
+  font-size: 30px;
+  width: fit-content;
+  height: fit-content;
+
+}
+
+.unitinput {
+  border: 0px inset #ccc;
+  background-color: rgb(242, 248, 246);
+}
+
+.unitinput input {
+  border: 0;
+  
 }
 
 a .submit-order {
@@ -97,5 +113,10 @@ a .submit-order {
 .approve {
   padding-left: 40px;
   font-size: large;
-  
+}
+
+#continue {
+  font-size: 20px;
+  margin-top: 5%; 
+  margin-bottom: 5%;
 }

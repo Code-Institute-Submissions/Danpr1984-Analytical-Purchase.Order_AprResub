@@ -1,248 +1,233 @@
-
 const shrimp = {
-    share: 0.3, 
-    weight: 0.33,
-    unitCost: 5
+    share: 0.3,  //parts of 1
+    weight: 6,  //in ounces
+    unitCost: 5 //in $$
 };
 
 const snapper = {
-    share : 0.2,
-    weight: 0.33,
-    unitCost: 4
+    share: 0.2,   //parts of 1
+    weight: 20, //in ounces
+    unitCost: 4 //in $$
 };
 
 const seabass = {
-    share: 0.2,
-    weight: 0.33,
-    unitCost: 4
+    share: 0.2, //parts of 1
+    weight: 6, //in ounces
+    unitCost: 4 //in $$
 };
 
 const chicken = {
-    share: 0.2,
-    weight: 0.33,
-    unitCost: 4
+    share: 0.2, //parts of 1
+    weight: 8, //in ounces
+    unitCost: 4 //in $$
 };
 
 const ribeye = {
-    share: 0.1,
-    weight: 0.5,
-    unitCost: 4
+    share: 0.1, //parts of 1
+    weight: 8, //in ounces
+    unitCost: 4 //in $$
 };
+
+let pound = 16; //ounces in a pound
 
 
 let date = document.getElementById("date")
-date.addEventListener('change', function (e) {
-    console.log(this.value);
-});
 
 let dishes = document.getElementById("guests-number")
-dishes.addEventListener('change', function (e) {
-    console.log(parseInt(this.value));
-});
 
 let createdBy = document.getElementById("created-by")
-createdBy.addEventListener('change', function (e) {
-    console.log(this.value);
-});
 
 let operand1Shrimp = document.getElementById('operand1-shrimp');
-operand1Shrimp.addEventListener('change', function (e) {
-    console.log(parseInt(this.value));
-});
-
-
 
 let operand1Snapper = document.getElementById('operand1-snapper');
-operand1Snapper.addEventListener('change', function (e) {
-    console.log(parseInt(this.value));
-});
-
 
 let operand1Seabass = document.getElementById('operand1-seabass');
-operand1Seabass.addEventListener('change', function (e) {
-    console.log(parseInt(this.value));
-});
-
-
 
 let operand1Chicken = document.getElementById('operand1-chicken');
-operand1Chicken.addEventListener('change', function (e) {
-    console.log(parseInt(this.value));
-})
-
-
 
 let operand1Ribeye = document.getElementById('operand1-ribeye');
-operand1Ribeye.addEventListener('change', function (e) {
-    console.log(parseInt(this.value));
-});
-
-
-/**
- * Getting all the elements on page one to be able to gather needed information to make calculations for page two */
-
- function Calculate() {
-     
-    let date = document.getElementById("date").value;
-    let dishes = document.getElementById("guests-number").value;
-    let createdBy = document.getElementById("created-by").value;
-    let operand1Shrimp = document.getElementById('operand1-shrimp').value;
-    let operand1Snapper = document.getElementById('operand1-snapper').value;
-    let operand1Seabass = document.getElementById('operand1-seabass').value;
-    let operand1Chicken = document.getElementById('operand1-chicken').value;
-    let operand1Ribeye = document.getElementById('operand1-ribeye').value;
-
-     
-    multiplyShareDishes(dishes);
-    amountDish ();
-    needAmount();
-
-}
-    /**
-     * ??????
-     */
-    function multiplyShareDishes(dishes) {
-        
-        let operand3Shrimp = shrimp.share * dishes;
-        document.getElementById("operand3-shrimp").value = operand3Shrimp;
-
-        let operand3Snapper = snapper.share * dishes;
-        document.getElementById("operand3-redsnapper").value = operand3Snapper;
-
-
-        let operand3Seabass = seabass.share * dishes;
-        document.getElementById("operand3-seabass").value = operand3Seabass;
-
-        let operand3Chicken = chicken.share * dishes;
-        document.getElementById('operand3-chicken').value = operand3Chicken;
-        
-        let operand3Ribeye = ribeye.share * dishes;
-        document.getElementById('operand3-ribeye').value = operand3Ribeye;
-        
-    }
-    /**
-     * ???????
-     */
-    function amountDish () {
-           document.getElementById("operand4-shrimp").value = shrimp.weight;
-           document.getElementById("operand4-redsnapper").value = snapper.weight;
-           document.getElementById("operand4-seabass").value = seabass.weight;
-           document.getElementById("operand4-chicken").value = chicken.weight;
-           document.getElementById("operand4-ribeye").value = ribeye.weight;
-           
-    }
-
-    function needAmount() {
-
-        
-        let operand5Shrimp = document.getElementById("operand3-shrimp").value;
-        operand5Shrimp *= shrimp.weight;
-        document.getElementById("operand5-shrimp").value = operand5Shrimp;
-
-        let operand5Snapper = document.getElementById("operand3-redsnapper").value;
-        operand5Snapper *= snapper.weight;
-        document.getElementById("operand5-redsnapper").value = operand5Snapper;
-
-        let operand5Seabass = document.getElementById("operand3-seabass").value;
-        operand5Seabass *= seabass.weight;
-        document.getElementById("operand5-seabass").value = operand5Seabass;
-
-        let operand5Chicken = document.getElementById("operand3-chicken").value;
-        operand5Chicken *= chicken.weight;
-        document.getElementById("operand5-chicken").value = operand5Chicken;
-
-        let operand5Ribeye = document.getElementById("operand3-ribeye").value;
-        operand5Ribeye *= ribeye.weight;
-        document.getElementById("operand5-ribeye").value = operand5Ribeye;
-}
-
-
-
-
-    
-    /*let shoppingList = [date, dishes, createdBy, operand1Shrimp, operand1Snapper, operand1Seabass, operand1Chicken, operand1Ribeye];
-    
-    window.location = '../order.html?shoppingList=' + shoppingList;]*/
-    
-    
-    
-    
-    
-    
-    
-function contentLoad() {
-    let date2 = document.getElementById("datep2")
-    let dishes2 = document.getElementById("guests-numberp2")
-    let createdBy2 = document.getElementById("created-byp2")
-    let operand2Shrimp = document.getElementById("operand2-shrimp");
-    let operand2Snapper = document.getElementById("operand2-snapper");
-    let operand2Seabass = document.getElementById("operand2-seabass");
-    let operand2Chicken = document.getElementById('operand2-chicken');
-    let operand2Ribeye = document.getElementById('operand2-ribeye');
-
-    
-    
-}
-
-
 
 /**
  * This function should execute all the operations and show results in chart
  */
 
+function Calculate() {
 
-/**
- * This function should divide the total amount of dishes expected to be sold with the sells share of each dish
- 
-function calculateDishesByProduct() {*/
-
-  
-    
-
-
-/**
- * This function should multiply the total amount of dishes expected to be sold per product with the amount of product contained in each dish */
+    let date = document.getElementById("date").value;
+    let dishes = document.getElementById("guests-number").value;
+    let createdBy = document.getElementById("created-by").value;
+    let operand1Shrimp = document.getElementById('operand1-shrimp').value;
+    let operand1Snapper = document.getElementById('operand1-redsnapper').value;
+    let operand1Seabass = document.getElementById('operand1-seabass').value;
+    let operand1Chicken = document.getElementById('operand1-chicken').value;
+    let operand1Ribeye = document.getElementById('operand1-ribeye').value;
 
 
-function productAmount() {
-    
-    
+    multiplyShareDishes(dishes);
+    amountDish();
+    needAmount();
+    unitCost();
+    onHand();
+    totalOrder();
+    totalCost();
+    totalOrderCost();
 }
 
 /**
- * This function should substract the product on stock from the total amount of product needed and multiply the result by the unit cost of each product */
-function calculateOrder() {
-    let operand6Shrimp = document.getElementById("operand6-shrimp");
-    let operand6Snapper = document.getElementById("operand6-snapper");
-    let operand6Seabass = document.getElementById("operand6-seabass");
-    let operand6Chicken = document.getElementById('operand6-chicken');
-    let operand6Ribeye = document.getElementById('operand6-ribeye');
+ * This function will connect the data in the on hand column in order to preform operations in the chart
+ */
 
-    operand6Shrimp = operand5Shrimp - operand2Shrimp;
-    operand6Snapper = operand5Snapper - operand2Snapper;
-    operand6Seabass = operand5Seabass - operand2Seabass;
-    operand6Chicken = operand5Chicken - operand2Chicken;
-    operand6Ribeye = operand5Ribeye - operand2Ribeye;
+function onHand() {
 
-    let operand7Shrimp = document.getElementById("operand7-shrimp");
-    let operand7Snapper = document.getElementById("operand7-snapper");
-    let operand7Seabass = document.getElementById("operand7-seabass");
-    let operand7Chicken = document.getElementById('operand7-chicken');
-    let operand7Ribeye = document.getElementById('operand7-ribeye');
+    let operand2Shrimp = document.getElementById('operand1-shrimp').value;
+    document.getElementById('operand2-shrimp').value = operand2Shrimp;
 
-    operand7Shrimp = shrimp.unitCost;
-    operand7Snapper = snapper.unitCost;
-    operand7Seabass = seabass.unitCost;
-    operand7Chicken = chicken.unitCost;
-    operand7Ribeye = ribeye.unitCost;
+    let operand2Snapper = document.getElementById('operand1-redsnapper').value;
+    document.getElementById('operand2-redsnapper').value = operand2Snapper;
 
-    let operand8Shrimp = document.getElementById("operand8-shrimp");
-    let operand8Snapper = document.getElementById("operand8-snapper");
-    let operand8Seabass = document.getElementById("operand8-seabass");
-    let operand8Chicken = document.getElementById('operand8-chicken');
-    let operand8Ribeye = document.getElementById('operand8-ribeye');
+    let operand2Seabass = document.getElementById('operand1-seabass').value;
+    document.getElementById('operand2-seabass').value = operand2Seabass;
+
+    let operand2Chicken = document.getElementById('operand1-chicken').value;
+    document.getElementById('operand2-chicken').value = operand2Chicken;
+
+    let operand2Ribeye = document.getElementById('operand1-ribeye').value;
+    document.getElementById('operand2-ribeye').value = operand2Ribeye;
+
 
 }
 
+/**
+ * This function multiplies the amount of dishes expected to be sold with the sales share per product
+ */
+function multiplyShareDishes(dishes) {
+
+    let operand3Shrimp = shrimp.share * dishes;
+    document.getElementById("operand3-shrimp").value = operand3Shrimp;
+
+    let operand3Snapper = snapper.share * dishes;
+    document.getElementById("operand3-redsnapper").value = operand3Snapper;
 
 
+    let operand3Seabass = seabass.share * dishes;
+    document.getElementById("operand3-seabass").value = operand3Seabass;
+
+    let operand3Chicken = chicken.share * dishes;
+    document.getElementById('operand3-chicken').value = operand3Chicken;
+
+    let operand3Ribeye = ribeye.share * dishes;
+    document.getElementById('operand3-ribeye').value = operand3Ribeye;
+
+}
+/**
+ * This function brings the amount per ounces in each dish recipe to the chart
+ **/
+
+function amountDish() {
+    document.getElementById("operand4-shrimp").value = shrimp.weight;
+    document.getElementById("operand4-redsnapper").value = snapper.weight;
+    document.getElementById("operand4-seabass").value = seabass.weight;
+    document.getElementById("operand4-chicken").value = chicken.weight;
+    document.getElementById("operand4-ribeye").value = ribeye.weight;
+
+}
+
+/**
+ * This function should multiply the total amount of dishes expected to be sold per product with the amount of product contained in each dish, divided by 16 which is the amount of ounce in a pound
+ */
+function needAmount() {
+
+
+
+    let operand5Shrimp = document.getElementById("operand3-shrimp").value;
+    operand5Shrimp *= shrimp.weight/pound;
+    document.getElementById("operand5-shrimp").value = operand5Shrimp;
+
+    let operand5Snapper = document.getElementById("operand3-redsnapper").value;
+    operand5Snapper *= snapper.weight/pound;
+    document.getElementById("operand5-redsnapper").value = operand5Snapper;
+
+    let operand5Seabass = document.getElementById("operand3-seabass").value;
+    operand5Seabass *= seabass.weight/pound;
+    document.getElementById("operand5-seabass").value = operand5Seabass;
+
+    let operand5Chicken = document.getElementById("operand3-chicken").value;
+    operand5Chicken *= chicken.weight/pound;
+    document.getElementById("operand5-chicken").value = operand5Chicken;
+
+    let operand5Ribeye = document.getElementById("operand3-ribeye").value;
+    operand5Ribeye *= ribeye.weight/pound;
+    document.getElementById("operand5-ribeye").value = operand5Ribeye;
+}
+
+/**
+ *This function should substract the products on hand from the total amount of product needed to get the final order amount
+ * */
+
+function totalOrder() {
+
+    let operand6Shrimp = document.getElementById("operand5-shrimp").value;
+    operand6Shrimp -= document.getElementById("operand2-shrimp").value;
+    document.getElementById("operand6-shrimp").value = operand6Shrimp;
+
+    let operand6Snapper = document.getElementById("operand5-redsnapper").value;
+    operand6Snapper -= document.getElementById("operand2-redsnapper").value;
+    document.getElementById("operand6-redsnapper").value = operand6Snapper;
+
+    let operand6Seabass = document.getElementById("operand5-seabass").value;
+    operand6Seabass -= document.getElementById("operand2-seabass").value;
+    document.getElementById("operand6-seabass").value = operand6Seabass;
+
+    let operand6Chicken = document.getElementById('operand5-chicken').value;
+    operand6Chicken -= document.getElementById("operand2-chicken").value;
+    document.getElementById("operand6-chicken").value = operand6Chicken;
+
+    let operand6Ribeye = document.getElementById('operand5-ribeye').value;
+    operand6Ribeye -= document.getElementById("operand2-ribeye").value;
+    document.getElementById("operand6-ribeye").value = operand6Ribeye;
+
+}
+
+/**
+This function will bring the unit cost of each product to the table. The unit cost of each product are in the objects*/
+
+function unitCost() {
+
+    document.getElementById("operand7-shrimp").value = shrimp.unitCost;
+    document.getElementById("operand7-redsnapper").value = snapper.unitCost;
+    document.getElementById("operand7-seabass").value = seabass.unitCost;
+    document.getElementById("operand7-chicken").value = chicken.unitCost;
+    document.getElementById("operand7-ribeye").value = ribeye.unitCost;
+}
+
+
+/** This function multiplies the result of the needed amount to be ordered by the unit cost of each product to give us a total amount */
+
+function totalCost() {
+
+    let operand7Shrimp = document.getElementById("operand6-shrimp").value;
+    operand7Shrimp *= shrimp.unitCost;
+    document.getElementById("operand8-shrimp").value = operand7Shrimp;
+
+    let operand7Snapper = document.getElementById("operand6-redsnapper").value;
+    operand7Snapper *= snapper.unitCost;
+    document.getElementById("operand8-redsnapper").value = operand7Snapper;
+
+    let operand7Seabass = document.getElementById("operand6-seabass").value;
+    operand7Seabass *= seabass.unitCost;
+    document.getElementById("operand8-seabass").value = operand7Seabass;
+
+    let operand7Chicken = document.getElementById('operand6-chicken').value;
+    operand7Chicken *= seabass.unitCost;
+    document.getElementById("operand8-chicken").value = operand7Chicken;
+
+    let operand7Ribeye = document.getElementById('operand6-ribeye').value;
+    operand7Ribeye *= seabass.unitCost;
+    document.getElementById("operand8-ribeye").value = operand7Ribeye;
+
+}
+
+function totalOrderCost() {
+    let totalAmount = parseInt(document.getElementById("operand8-shrimp").value) + parseInt(document.getElementById("operand8-redsnapper").value) + parseInt(document.getElementById("operand8-seabass").value) + parseInt(document.getElementById("operand8-chicken").value) + parseInt(document.getElementById("operand8-ribeye").value);
+    document.getElementById("total-amount").value = totalAmount;
+}
