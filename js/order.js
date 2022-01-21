@@ -68,21 +68,10 @@ window.onload = function() {
 
  function onHand() {
 
-    
-    document.getElementById('operand2-shrimp').value = shoppingList[3];
-
-    
     document.getElementById('operand2-redsnapper').value = shoppingList[4];
-
-    
     document.getElementById('operand2-seabass').value = shoppingList[5];
-
-    
     document.getElementById('operand2-chicken').value = shoppingList[6];
-
-    
     document.getElementById('operand2-ribeye').value = shoppingList[7];
-
 
 }
 
@@ -126,8 +115,6 @@ function amountDish() {
  */
 function needAmount() {
 
-
-
     let operand5Shrimp = document.getElementById("operand3-shrimp").value;
     operand5Shrimp *= shrimp.weight/pound;
     document.getElementById("operand5-shrimp").value = operand5Shrimp;
@@ -147,6 +134,7 @@ function needAmount() {
     let operand5Ribeye = document.getElementById("operand3-ribeye").value;
     operand5Ribeye *= ribeye.weight/pound;
     document.getElementById("operand5-ribeye").value = operand5Ribeye;
+    
 }
 
 /**

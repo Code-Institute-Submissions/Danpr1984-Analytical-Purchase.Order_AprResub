@@ -11,11 +11,14 @@
 </head>
 
 <body>
-    <header class="style-header">LOGO!</header>
+    <header class="style-header">
+        <div class="style">
+            <h3>The Purchase Helper</h1>
+                <img src="./assets/images/purchase helper.png">
+        </div>
+    </header>
     <div>
-        <a href="./index.html">
-            <input type="button" name="continue" id="go-back" value="Go Back">
-        </a>
+        
         <ul class="flex-list">
             <li><label for="date">Period</label>
                 <input type="text" class="text" id="date-p2" disabled></li>
@@ -24,10 +27,12 @@
             <li><label for="date">Order Created By</label>
                 <input type="text" class="text" id="created-byp2" disabled></li>
         </ul>
+        <p>Order Overview:</p>
+        <a href="./calculate.html">
+            <input type="button" class ="button" name="continue" id="recalculate" value="Recalculate Order">
+        </a>
     </div>
     <div>
-
-    </div>
     <form action="" class="order-table">
         <table class="table-2">
             <thead>

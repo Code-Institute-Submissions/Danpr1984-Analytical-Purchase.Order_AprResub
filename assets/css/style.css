@@ -6,12 +6,40 @@ body {
 }
 
 .style-header {
-  height: 2em;
-  margin-bottom: 4%;
+  height: 1em;
+  margin-bottom: 15%;
   padding: 3%;
-  text-align-last: center;
   font-size: 40px;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
 
+.style {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 15%;
+}
+
+.description, .approve {
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
+  margin-bottom: 10%;
+}
+
+#registration-form {
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
+  margin-bottom: 10%;
+  margin-left: 0
+  
+}
+
+#recalculate {
+  margin-top: 5%;
+  font-size: 15px;
+  margin-left: 0;
 }
 
 h3 {
@@ -42,7 +70,7 @@ p {
 
 .flex-list li label {
 
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
 
 .text {
@@ -97,7 +125,7 @@ td {
 
 .unitinput input {
   border: 0;
-  
+
 }
 
 a .submit-order {
@@ -117,6 +145,6 @@ a .submit-order {
 
 #continue {
   font-size: 20px;
-  margin-top: 5%; 
+  margin-top: 5%;
   margin-bottom: 5%;
 }

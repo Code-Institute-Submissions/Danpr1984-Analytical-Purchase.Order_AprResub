@@ -8,74 +8,44 @@
     <title>Purchase Assistant</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="#">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&family=Mochiy+Pop+P+One&display=swap');
+    </style>
 </head>
 
 <body>
-    <header class="style-header">Welcome!</header>
-    <div class="form-container">
-        <h3>Step 1</h3>
-        <p class="message">Please fill in the requested information to help you calculate your order</p>
-    </div>
+    <header class="style-header">
+        <div class="style">
+            <h3>The Purchase Helper</h1>
+                <img src="./assets/images/purchase helper.png">
+        </div>
+    </header>
 
-    <ul class="flex-list">
-        <li><label for="date">Period</label>
-            <input type="text" class="text" id="date" required></li>
-        <li><label for="date" required>Expected number of guests</label>
-            <input type="number" class="text" id="guests-number" required min="1"></li>
-        <li><label for="date">Order Created By</label>
-            <input type="text" class="text" id="created-by" required></li>
-    </ul>
-
-
-    <div>
-        <h3>Step 2</h3>
-        <p class="message">Tell us how much product you have on hand</p>
-
-        <table class=table-1>
-            <thead>
-                <tr>
-                    <th>Product</th>
-                    <th>Unit</th>
-                    <th>On Hand</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Shrimp</td>
-                    <td>Lb</td>
-                    <td><input type="number" class="input-box" class="first-box" id="operand1-shrimp" required></td>
-                </tr>
-                <tr>
-                    <td>Red snapper filet</td>
-                    <td>Lb</td>
-                    <td><input type="number" class="input-box" class="first-box" id="operand1-redsnapper" required></td>
-                </tr>
-                <tr>
-                    <td>Sea Bass</td>
-                    <td>Lb</td>
-                    <td><input type="number" class="input-box" class="first-box" id="operand1-seabass" required></td>
-                </tr>
-                <tr>
-                    <td>Chicken</td>
-                    <td>Lb</td>
-                    <td><input type="number" class="input-box" class="first-box" id="operand1-chicken" required></td>
-                </tr>
-                <tr>
-                    <td>3up Rib Eye</td>
-                    <td>Lb</td>
-                    <td><input type="number" class="input-box" class="first-box" id="operand1-ribeye" required></td>
-                </tr>
-            </tbody>
-
-        </table>
-
-        <button class="button" onclick="Continue()" id="continue">Calculate Order</button>
+    <div class="description">
+        <p>Small business often struggle to get their orders on point. Sometimes they buy too little and sometimes they
+            buy
+            too much. In both cases there are costs attached with having a wrong purchasing strategy. We have created an
+            analytical tool that will help you calculate your orders in a more accurate way.
+            Tell us how many guests you are expecting and how much product you have on hand and we will suggest you how
+            much
+            you need to order!</p>
 
     </div>
-    
+    <div id="registration-form">
+        <h3>Register your Account and Start a Purchase Demo!</h3>
+        <form id="registration-form" method="POST" action="">
+            <div class="username">
+                <label for="username">Username:</label>
+                <input id="username" name="username" type="text" required>
+            </div>
+            <div class="email">
+                <label for="password">Email Address:</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+            <a href="./calculate.html">
+                <input type="button"  name="continue" id="recalculate" value="Start Demo">
+            </a>
 
-
-    <script src="assets/../js/index.js"></script>
+        </form>
+    </div>
 </body>
-
-</html>
