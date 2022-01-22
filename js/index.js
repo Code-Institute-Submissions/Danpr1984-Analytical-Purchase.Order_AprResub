@@ -1,8 +1,10 @@
 /*jshint esversion: 6 */
 /**
- * This funcition picks up the values from the calculate.html so they can be used to make operations with JavaScript files that will reflect in the forms in the order.html file
+ * This function picks up the values from the calculate.html so they can be used to make operations with JavaScript files that will reflect in the forms in the order.html file
  */
-function Continue() {
+
+let myButton = document.getElementById("continue");
+myButton.addEventListener("click", function Continue() {
 
     const start = document.getElementById("start-date").value;
     const end = document.getElementById("end-date").value;
@@ -14,8 +16,10 @@ function Continue() {
     const operand1Chicken = document.getElementById('operand1-chicken').value;
     const operand1Ribeye = document.getElementById('operand1-ribeye').value;
 
-    const shoppingList = [start, end, dishes, createdBy, operand1Shrimp, operand1Snapper, operand1Seabass, operand1Chicken, operand1Ribeye ];
-window.location = '../order.html?shoppingList=' + shoppingList;
-}
 
 
+    const shoppingList = [start, end, dishes, createdBy, operand1Shrimp, operand1Snapper, operand1Seabass, operand1Chicken, operand1Ribeye];
+    window.location = '../order.html?shoppingList=' + shoppingList;
+
+   
+});

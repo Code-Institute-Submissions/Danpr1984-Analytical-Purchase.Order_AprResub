@@ -17,77 +17,86 @@
     <header class="style-header">
         <div class="style">
             <h3>The Purchase Helper</h1>
-                <img src="./assets/images/purchase helper.png">
+                <img src="./assets/images/purchase helper.png" alt="a notebook and a pencil">
         </div>
     </header>
-    <div class="form-container">
-        <h3>Step 1</h3>
-        <p class="message">Please fill in the requested information to help you calculate your order</p>
-    </div>
+    <form action="">
+        <div class="form-container">
+            <h3>Step 1</h3>
+            <p class="message">Please fill in the requested information to help you calculate your order</p>
+        </div>
 
-    <ul class="flex-list">
-        <li> <a href="./index.html">
-                <input type="button" name="continue" id="go-back" value="Go Back">
-            </a></li>
-        <li>
-            
-        <li><label for="start">Order From:<input type="date" id="start-date" name="start" class="text"
-                    required></label>
-            <label for="end">To:<input type="date" id="end-date" name="end" class="text" required></label>
-        </li>
-        <li><label for="date" required>Expected number of guests:</label>
-            <input type="number" class="text" id="guests-number" required min="1"></li>
-        <li><label for="date">Order Created By:</label>
-            <input type="text" class="text" id="created-by" required></li>
-    </ul>
+        <ul class="flex-list">
+            <li> <a href="./index.html">
+                    <input type="button" name="continue" id="go-back" value="Go Back">
+                </a></li>
+            <li>
+
+            <li><label for="start">Order From:<input type="date" id="start-date" name="start" class="text"
+                        required></label>
+                <label for="end">To:<input type="date" id="end-date" name="end" class="text" required></label>
+            </li>
+            <li><label for="date" required>Expected number of guests:</label>
+                <input type="number" class="text" id="guests-number" required min="1"></li>
+            <li><label for="date">Order Created By:</label>
+                <input type="text" class="text" id="created-by" required></li>
+        </ul>
 
 
-    <div>
-        <h3>Step 2</h3>
-        <p class="message">Tell us how much product you have on hand</p>
+        <div>
+            <img src="./assets/images/little-chef.jpeg" alt="a chef asking us to continue" id="chef">
+            <h3>Step 2</h3>
+            <p class="message">Tell us how much product you have on hand</p>
 
-        <table class=table-1>
-            <thead>
-                <tr>
-                    <th>Product</th>
-                    <th>Unit</th>
-                    <th>On Hand</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Shrimp</td>
-                    <td>Lb</td>
-                    <td><input type="number" class="input-box" class="first-box" id="operand1-shrimp" required></td>
-                </tr>
-                <tr>
-                    <td>Red snapper filet</td>
-                    <td>Lb</td>
-                    <td><input type="number" class="input-box" class="first-box" id="operand1-redsnapper" required></td>
-                </tr>
-                <tr>
-                    <td>Sea Bass</td>
-                    <td>Lb</td>
-                    <td><input type="number" class="input-box" class="first-box" id="operand1-seabass" required></td>
-                </tr>
-                <tr>
-                    <td>Chicken</td>
-                    <td>Lb</td>
-                    <td><input type="number" class="input-box" class="first-box" id="operand1-chicken" required></td>
-                </tr>
-                <tr>
-                    <td>3up Rib Eye</td>
-                    <td>Lb</td>
-                    <td><input type="number" class="input-box" class="first-box" id="operand1-ribeye" required></td>
-                </tr>
-            </tbody>
+            <table class=table-1>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Unit</th>
+                        <th>On Hand</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shrimp</td>
+                        <td>Lb</td>
+                        <td><input type="number" class="input-box" class="first-box" id="operand1-shrimp" required></td>
+                    </tr>
+                    <tr>
+                        <td>Red snapper filet</td>
+                        <td>Lb</td>
+                        <td><input type="number" class="input-box" class="first-box" id="operand1-redsnapper" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sea Bass</td>
+                        <td>Lb</td>
+                        <td><input type="number" class="input-box" class="first-box" id="operand1-seabass" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chicken</td>
+                        <td>Lb</td>
+                        <td><input type="number" class="input-box" class="first-box" id="operand1-chicken" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3up Rib Eye</td>
+                        <td>Lb</td>
+                        <td><input type="number" class="input-box" class="first-box" id="operand1-ribeye" required></td>
+                    </tr>
+                </tbody>
 
-        </table>
+            </table>
 
-        <button class="button" onclick="Continue()" id="continue">Calculate Order</button>
+            <button class="button" id="continue">Calculate Order</button>
 
-    </div>
+        </div>
+    </form>
 
+    <footer class="style-footer">
+        <p>&copy; Copyright 2022 All Rights Reserved</p>
+    </footer>
 
 
     <script src="assets/../js/index.js"></script>

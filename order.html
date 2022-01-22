@@ -17,7 +17,7 @@
     <header class="style-header">
         <div class="style">
             <h3>The Purchase Helper</h1>
-                <img src="./assets/images/purchase helper.png">
+                <img src="./assets/images/purchase helper.png" alt="a notebook and a pencil">
         </div>
     </header>
     <div>
@@ -29,14 +29,15 @@
                         required></label></li>
 
             <li><label for="guests-numberp2">Expected number of guests:</label>
-                <input type="number"  class="text" names="guests-numberp2" id="guests-numberp2"
-                    disabled></li>
+                <input type="number" class="text" names="guests-numberp2" id="guests-numberp2" disabled></li>
             <li><label for="created-byp2">Order Created By:</label>
                 <input type="text" class="text" name="created-byp2" id="created-byp2" disabled></li>
 
         </ul>
-
-        <p>Order Overview:</p>
+        <div class="overview">
+            
+            <p><span><img src="./assets/images/little-chef.jpeg" alt="a chef"></span>Order Overview:</p>
+        </div>
 
     </div>
     <div>
@@ -157,11 +158,10 @@
                         <td class="total">Total</td>
                         <td><span class="unitinput"><input type="number" class="input-box" id="total-amount" disabled
                                     name="currency">$</span></td>
-                        <!--<input type="number" class="input-box" id="total-amount" disabled></td>-->
                     </tr>
 
                 </tbody>
-                
+
 
             </table>
             <div class="order-button">
@@ -175,6 +175,9 @@
         </form>
 
     </div>
+    <footer class="style-footer">
+        <p>&copy; Copyright 2022 All Rights Reserved</p>
+    </footer>
     <script src="assets/../js/order.js"></script>
 
 </body>
