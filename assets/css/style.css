@@ -20,7 +20,7 @@ body {
   margin-left: 15%;
 }
 
-.description, .approve {
+.description {
   text-align: center;
   width: 100%;
   line-height: 1.5;
@@ -36,10 +36,20 @@ body {
   
 }
 
-#recalculate {
+.register {
+  list-style-type: none;
+}
+
+.register li {
+  margin-top: 50px;
+}
+
+   #recalculate {
   margin-top: 5%;
   font-size: 15px;
-  margin-left: 0;
+  display: flex;
+  float: left; 
+  margin-right: 5%;
 }
 
 h3 {
@@ -75,6 +85,7 @@ p {
 
 .text {
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 th,
@@ -97,10 +108,7 @@ td {
 }
 
 .button {
-  width: fit-content;
-  margin-left: 40%;
-  margin-top: 2.5%;
-  margin-bottom: 2.5;
+  width: 10%
 }
 
 .table-2 {
@@ -123,24 +131,41 @@ td {
   background-color: rgb(242, 248, 246);
 }
 
-.unitinput input {
+.unitinput2 {
+  border: 0px inset #ccc;
+  background-color: white;
+}
+
+.unitinput input, .unitinput2 input {
   border: 0;
 
 }
 
-a .submit-order {
-  width: 20%;
-  margin-top: 2.5%;
-  margin-bottom: 2.5;
-  font-size: 20px;
-  position: relative;
-  margin-left: 40%;
+.color{
+  width: 45px;
   background-color: white;
+  border: 1px solid black;
+}
+
+a .submit-order {
+  width: 25%;
+  padding-right: 100px;
+  margin-top: 2.5%;
+  font-size: 15px;
+  float: right;
+  
+  text-align: center;
 }
 
 .approve {
   padding-left: 40px;
   font-size: large;
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
+  margin-top: 10%;
+  
+
 }
 
 #continue {

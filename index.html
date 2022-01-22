@@ -22,7 +22,8 @@
     </header>
 
     <div class="description">
-        <p>Small business often struggle to get their orders on point. Sometimes they buy too little and sometimes they
+        <p>Small businesses often struggle to get their orders on point. Sometimes they buy too little and sometimes
+            they
             buy
             too much. In both cases there are costs attached with having a wrong purchasing strategy. We have created an
             analytical tool that will help you calculate your orders in a more accurate way.
@@ -34,18 +35,20 @@
     <div id="registration-form">
         <h3>Register your Account and Start a Purchase Demo!</h3>
         <form id="registration-form" method="POST" action="">
-            <div class="username">
-                <label for="username">Username:</label>
-                <input id="username" name="username" type="text" required>
-            </div>
-            <div class="email">
-                <label for="password">Email Address:</label>
-                <input id="email" name="email" type="email" required>
-            </div>
-            <a href="./calculate.html">
-                <input type="button"  name="continue" id="recalculate" value="Start Demo">
-            </a>
-
+            <ul class="register">
+                <li class="username">
+                    <label for="username">Username:</label>
+                    <input id="username" name="username" type="text" required>
+                </li>
+                <li class="email">
+                    <label for="password">Email Address:</label>
+                    <input id="email" name="email" type="email" required>
+                </li>
+                <li><a href="./calculate.html">
+                        <input type="button" name="continue" id="demo" value="Start Demo">
+                    </a>
+                </li>
+            </ul>
         </form>
     </div>
 </body>

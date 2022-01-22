@@ -40,9 +40,10 @@ window.onload = function() {
 
     let shoppingList = URL.split(',');
     
-    document.getElementById("date-p2").value = shoppingList[0];
-    document.getElementById("guests-numberp2").value = shoppingList[1];
-    document.getElementById("created-byp2").value = shoppingList[2];
+    document.getElementById("start-date2").value = shoppingList[0];
+    document.getElementById("end-date2").value = shoppingList[1];
+    document.getElementById("guests-numberp2").value = shoppingList[2];
+    document.getElementById("created-byp2").value = shoppingList[3];
     document.getElementById("operand")
     let dishes = shoppingList[1];
 
