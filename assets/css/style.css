@@ -44,13 +44,22 @@ body {
   margin-top: 50px;
 }
 
-   #recalculate {
+   #go-back {
   margin-top: 5%;
   font-size: 15px;
   display: flex;
   float: left; 
   margin-right: 5%;
 }
+
+#continue {
+  font-size: 15px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 10%;
+  margin-left: 40%;
+}
+/* This is the styling of the calculate.html file*/
 
 h3 {
   padding-left: 40px;
@@ -87,6 +96,9 @@ p {
   margin-left: 10px;
   margin-right: 10px;
 }
+#end-date2, #guests-numberp2 {
+  margin-left: 10px;
+}
 
 th,
 td {
@@ -101,15 +113,14 @@ td {
   width: 50%;
 }
 
-.input-box {
-  width: 45px;
-  background-color: rgb(245, 245, 248);
-  border: 1px solid black;
-}
+
 
 .button {
   width: 10%
 }
+
+
+/* This is the styling of the order.html file*/
 
 .table-2 {
   border-collapse: collapse;
@@ -120,10 +131,14 @@ td {
 }
 
 .total {
-  font-size: 30px;
+  font-size: 15px;
   width: fit-content;
   height: fit-content;
 
+}
+
+#total-amount {
+  font-size: 18px;
 }
 
 .unitinput {
@@ -141,21 +156,40 @@ td {
 
 }
 
+.input-box {
+  width: 45px;
+  
+}
+
+.smaller {
+  width: 30px;
+}
+
 .color{
   width: 45px;
   background-color: white;
   border: 1px solid black;
 }
 
+a .recalculate {
+  width: 12%;
+  text-align: center;
+  font-size: 15px;
+  float: left;
+  margin-left: 40px;
+  
+}
+
 a .submit-order {
-  width: 25%;
-  padding-right: 100px;
-  margin-top: 2.5%;
+  width: 10%;
+  text-align: center;
   font-size: 15px;
   float: right;
+  margin-right: 40px;
   
-  text-align: center;
 }
+
+/* This is the styling of the approval.html file*/
 
 .approve {
   padding-left: 40px;
@@ -164,12 +198,5 @@ a .submit-order {
   width: 100%;
   line-height: 1.5;
   margin-top: 10%;
-  
-
 }
 
-#continue {
-  font-size: 20px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}

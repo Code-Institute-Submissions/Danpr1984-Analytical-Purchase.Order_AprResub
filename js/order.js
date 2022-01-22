@@ -1,35 +1,40 @@
+/*jshint esversion: 6 */
+
 const shrimp = {
-    share: 0.3,  //parts of 1
+    share: 0.3,  //parts of 1 pound
     weight: 6,  //in ounces
     unitCost: 5 //in $$
 };
 
 const snapper = {
-    share: 0.2,   //parts of 1
+    share: 0.2,   //parts of 1 pound
     weight: 20, //in ounces
     unitCost: 4 //in $$
 };
 
 const seabass = {
-    share: 0.2, //parts of 1
+    share: 0.2, //parts of 1 pound
     weight: 6, //in ounces
     unitCost: 4 //in $$
 };
 
 const chicken = {
-    share: 0.2, //parts of 1
+    share: 0.2, //parts of 1 pound
     weight: 8, //in ounces
     unitCost: 4 //in $$
 };
 
 const ribeye = {
-    share: 0.1, //parts of 1
+    share: 0.1, //parts of 1 pound
     weight: 8, //in ounces
     unitCost: 4 //in $$
 };
 
 let pound = 16; //ounces in a pound
 
+/**
+ * This function should execute all the operations and show results automatically on the table in the order.html file
+ */
 
 window.onload = function() {
 
@@ -44,8 +49,7 @@ window.onload = function() {
     document.getElementById("end-date2").value = shoppingList[1];
     document.getElementById("guests-numberp2").value = shoppingList[2];
     document.getElementById("created-byp2").value = shoppingList[3];
-    document.getElementById("operand")
-    let dishes = shoppingList[1];
+    let dishes = shoppingList[2];
 
     multiplyShareDishes(dishes);
     amountDish();
@@ -55,29 +59,23 @@ window.onload = function() {
     totalOrder();
     totalCost();
     totalOrderCost();
-  
 
 /**
- * This function should execute all the operations and show results in chart
- */
-
-
- 
-/**
- * This function will connect the data in the on hand column in order to preform operations in the chart
+ * This function will connect the values in the on hand column from the calculate.html in order 
+ * to preform operations in the table from the order html
  */
 
  function onHand() {
-
-    document.getElementById('operand2-redsnapper').value = shoppingList[4];
-    document.getElementById('operand2-seabass').value = shoppingList[5];
-    document.getElementById('operand2-chicken').value = shoppingList[6];
-    document.getElementById('operand2-ribeye').value = shoppingList[7];
+    document.getElementById('operand2-shrimp').value = shoppingList[4];
+    document.getElementById('operand2-redsnapper').value = shoppingList[5];
+    document.getElementById('operand2-seabass').value = shoppingList[6];
+    document.getElementById('operand2-chicken').value = shoppingList[7];
+    document.getElementById('operand2-ribeye').value = shoppingList[8];
 
 }
 
 /**
- * This function multiplies the amount of dishes expected to be sold with the sales share per product
+ * This function multiplies the amount of dishes expected to be sold with the sales share (set in the objects) per product
  */
 function multiplyShareDishes(dishes) {
 
@@ -99,7 +97,7 @@ function multiplyShareDishes(dishes) {
 
 }
 /**
- * This function brings the amount per ounces in each dish recipe to the chart
+ * This function brings the amount per ounces in each dish recipe to the table
  **/
 
 function amountDish() {
@@ -112,7 +110,8 @@ function amountDish() {
 }
 
 /**
- * This function should multiply the total amount of dishes expected to be sold per product with the amount of product contained in each dish, divided by 16 which is the amount of ounce in a pound
+ * This function should multiply the total amount of dishes expected to be sold per product 
+ * with the amount of product contained in each dish, divided by 16 which is the amount of ounces in a pound
  */
 function needAmount() {
 
@@ -167,7 +166,8 @@ function totalOrder() {
 }
 
 /**
-This function will bring the unit cost of each product to the table. The unit cost of each product are in the objects*/
+ * This function will bring the unit cost of each product to the table. The unit cost of each product are in the objects
+*/
 
 function unitCost() {
 
@@ -179,7 +179,9 @@ function unitCost() {
 }
 
 
-/** This function multiplies the result of the needed amount to be ordered by the unit cost of each product to give us a total amount */
+/** 
+ *This function multiplies the result of the needed amount to be ordered by the unit cost of each product to give us a total amount  
+*/
 
 function totalCost() {
 
@@ -204,6 +206,10 @@ function totalCost() {
     document.getElementById("operand8-ribeye").value = operand7Ribeye;
 
 }
+
+/**
+ * This functions adds the result of total cost of each product to give us a total amount $ for the order
+ */
 
 function totalOrderCost() {
     let totalAmount = parseInt(document.getElementById("operand8-shrimp").value) + parseInt(document.getElementById("operand8-redsnapper").value) + parseInt(document.getElementById("operand8-seabass").value) + parseInt(document.getElementById("operand8-chicken").value) + parseInt(document.getElementById("operand8-ribeye").value);
