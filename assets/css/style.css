@@ -422,8 +422,13 @@ a .submit-order {
     font-size: 13px;
   }
 
-  .flex-list {
-    margin-bottom: 100px;
+  
+  #first-list {
+    margin-top: 180px;
+    margin-bottom: 180px;
+  }
+
+  #second-list {
     margin-bottom: 180px;
   }
 
