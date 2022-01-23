@@ -19,7 +19,7 @@
 
     let shoppingList = [start, end, dishes, createdBy, operand1Shrimp, operand1Snapper, operand1Seabass, operand1Chicken, operand1Ribeye];
     
-    window.location = '../order.html?shoppingList=' + shoppingList;
+    window.location = 'order.html?shoppingList=' + shoppingList;
 
 
 };
