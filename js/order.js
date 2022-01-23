@@ -44,7 +44,7 @@ window.onload = function() {
     
 
     let shoppingList = URL.split(',');
-    alert(shoppingList)
+    
     
     document.getElementById("start-date2").value = shoppingList[0];
     document.getElementById("end-date2").value = shoppingList[1];
