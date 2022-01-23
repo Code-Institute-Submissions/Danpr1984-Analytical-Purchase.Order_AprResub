@@ -44,6 +44,7 @@ window.onload = function() {
     
 
     let shoppingList = URL.split(',');
+    alert(shoppingList)
     
     document.getElementById("start-date2").value = shoppingList[0];
     document.getElementById("end-date2").value = shoppingList[1];
@@ -214,7 +215,7 @@ function totalCost() {
 function totalOrderCost() {
     let totalAmount = parseInt(document.getElementById("operand8-shrimp").value) + parseInt(document.getElementById("operand8-redsnapper").value) + parseInt(document.getElementById("operand8-seabass").value) + parseInt(document.getElementById("operand8-chicken").value) + parseInt(document.getElementById("operand8-ribeye").value);
     document.getElementById("total-amount").value = totalAmount;
-}
-
 };
 
+
+}
