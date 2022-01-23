@@ -61,6 +61,10 @@ body {
   margin-left: 40%;
 }
 
+.form-style{
+  padding-left: 40px;
+}
+
 /* This is the styling of the calculate.html file*/
 
 
@@ -238,21 +242,11 @@ a .submit-order {
 }
 
 
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/
 /* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
 
 
+/* Responsive design max-width 1100px*/
 @media screen and (max-width: 1100px) {
 
 /*Index.html*/
@@ -275,6 +269,8 @@ a .submit-order {
     line-height: 1.2;
   }
 
+
+  /*Order.html*/
   .input-box,
   .color {
     font-size: 14px;
@@ -296,32 +292,8 @@ a .submit-order {
     padding: 20px;
     text-align: left;
   }
-
-  /*#load-content {
-    width: 50%;
-    height: 400px;
-    margin-top: 100px;
-    margin-bottom: 150px;
-    float: right;
-    visibility: visible;
-    line-height: 1.2;
-    margin-right: 5%;
-    
-  }*/
-
 }
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+  /* Responsive design max-width 750px*/
 
 @media screen and (max-width: 750px) {
 
@@ -340,6 +312,7 @@ a .submit-order {
     margin-top: 100px;
   }
 
+  /*order.html*/
   #second-list {
     margin-top: 180px;
     margin-bottom: 90px;
@@ -372,18 +345,9 @@ a .submit-order {
   }
   
 }
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
-/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+
+/* Responsive design max-width 550px*/
+
 @media screen and (max-width: 550px) {
 
   /*Index.html*/
