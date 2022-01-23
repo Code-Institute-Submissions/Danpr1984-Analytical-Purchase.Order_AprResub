@@ -17,7 +17,7 @@
     <header class="style-header">
         <div class="style">
             <h3>The Purchase Helper</h1>
-                <img src="./assets/images/purchase helper.png" alt="a notebook and a pencil">
+                <img src="./assets/images/purchase-helper2.png" alt="a notebook and a pencil">
         </div>
     </header>
 
@@ -29,18 +29,16 @@
     </div>
     <form action="">
         <div class="form-container">
+            <a href="./index.html">
+                <input type="button" name="continue" id="go-back" value="Go Back">
+            </a>
             <h3>Step 1</h3>
             <p class="message">Please fill in the requested information to help you calculate your order</p>
         </div>
 
-
-
-        <ul class="flex-list">
-            <li> <a href="./index.html">
-                    <input type="button" name="continue" id="go-back" value="Go Back">
-                </a></li>
-            <li>
-
+        <ul class="flex-list" id="first-list">
+            
+        <li>
             <li><label for="start">Order From:<input type="date" id="start-date" name="start" class="text"
                         required></label>
                 <label for="end">To:<input type="date" id="end-date" name="end" class="text" required></label>
@@ -52,7 +50,7 @@
         </ul>
 
 
-        <div>
+        <div id="step-2">
             <h3>Step 2</h3>
             <p class="message">Tell us how much product you have on hand</p>
 

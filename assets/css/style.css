@@ -9,15 +9,15 @@ body {
   height: 1em;
   margin-bottom: 15%;
   padding: 3%;
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 .style {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  margin-left: 15%;
+  
 }
 
 .description {
@@ -32,7 +32,6 @@ body {
   width: 100%;
   line-height: 1.5;
   margin-bottom: 10%;
-  margin-left: 0
   
 }
 
@@ -42,13 +41,15 @@ body {
 
 .register li {
   margin-top: 50px;
-}
+} 
 
-   #go-back {
+/*This button connects calculate.html with the index.html*/
+#go-back {
+  display: none;
   margin-top: 5%;
   font-size: 15px;
-  display: flex;
-  float: left; 
+
+  float: left;
   margin-right: 5%;
 }
 
@@ -56,32 +57,23 @@ body {
   font-size: 15px;
   margin-top: 5%;
   margin-bottom: 5%;
-  width: 10%;
+  width: 20%;
   margin-left: 40%;
 }
+
 /* This is the styling of the calculate.html file*/
 
-h3 {
-  padding-left: 40px;
-}
-
-p {
-  padding-left: 40px;
-}
 
 .flex-list {
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-
-
 .flex-list li {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
 }
-
 
 .flex-list>li:not(:last-child) {
   margin-bottom: 50px;
@@ -92,12 +84,14 @@ p {
   text-transform: capitalize;
 }
 
+#guests-number {
+  margin-left: 10px;
+  width: 50px;
+}
+
 .text {
   margin-left: 10px;
   margin-right: 10px;
-}
-#end-date2, #guests-numberp2 {
-  margin-left: 10px;
 }
 
 th,
@@ -114,9 +108,9 @@ td {
 }
 
 #chef {
-margin-left: 20%;
-margin-bottom: 5%;
-margin-top: 0%;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  margin-top: 0%;
 }
 
 .button {
@@ -129,15 +123,16 @@ margin-top: 0%;
   visibility: hidden;
   float: right;
   margin-right: 15%;
-  margin-top: 10%;
+  margin-top: 5%;
+  text-align: center;
 }
 
 #load-content p {
   font-size: 13px;
   font-style: italic;
   line-height: 1.3;
-  
-} 
+
+}
 
 
 /* This is the styling of the order.html file*/
@@ -150,6 +145,18 @@ margin-top: 0%;
 
 }
 
+#end-date2 {
+  margin-left: 10px;
+}
+
+#guests-numberp2 {
+  margin-left: 10px;
+  width: 50px;
+}
+
+.overview{
+  text-align: center;
+}
 .total {
   font-size: 15px;
   width: fit-content;
@@ -171,21 +178,21 @@ margin-top: 0%;
   background-color: white;
 }
 
-.unitinput input, .unitinput2 input {
+.unitinput input,
+.unitinput2 input {
   border: 0;
 
 }
 
 .input-box {
   width: 45px;
-  
 }
 
 .smaller {
   width: 30px;
 }
 
-.color{
+.color {
   width: 45px;
   background-color: white;
   border: 1px solid black;
@@ -197,7 +204,7 @@ a .recalculate {
   font-size: 15px;
   float: left;
   margin-left: 40px;
-  
+
 }
 
 a .submit-order {
@@ -206,8 +213,9 @@ a .submit-order {
   font-size: 15px;
   float: right;
   margin-right: 40px;
-  
+
 }
+
 
 /* This is the styling of the approval.html file*/
 
@@ -222,9 +230,323 @@ a .submit-order {
 
 /* Footer styling for all html.files*/
 
-.style-footer{
+.style-footer {
   height: 10px;
   width: 100%;
   text-align: center;
   margin-top: 15%;
 }
+
+
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+
+
+@media screen and (max-width: 1100px) {
+
+/*Index.html*/
+.style-header {
+  font-size: 25px;
+}
+
+.style {
+  margin-left: 0;
+  }
+  
+  /*Calculation.html*/
+
+  #load-content {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+    float: none;
+    visibility: visible;
+    line-height: 1.2;
+  }
+
+  .input-box,
+  .color {
+    font-size: 14px;
+  }
+
+  .unitinput,
+  .unitinput2 {
+    width: 55px;
+  }
+
+  .table-2 {
+    border-collapse: collapse;
+    width: 10%;
+    text-align: center;
+
+  }
+
+  .table-2 td {
+    padding: 20px;
+    text-align: left;
+  }
+
+  /*#load-content {
+    width: 50%;
+    height: 400px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    float: right;
+    visibility: visible;
+    line-height: 1.2;
+    margin-right: 5%;
+    
+  }*/
+
+}
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+
+@media screen and (max-width: 750px) {
+
+   /*Calculation.html*/
+  #load-content {
+    width: 90%;
+    height: 400px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    float: none;
+    visibility: visible;
+    line-height: 1.2;
+  }
+
+  #first-list {
+    margin-top: 100px;
+  }
+
+  #second-list {
+    margin-top: 180px;
+    margin-bottom: 90px;
+  }
+
+  #continue {
+    width: 25%;
+  }
+
+  .input-box,
+  .color {
+    font-size: 14px;
+  }
+
+  .unitinput,
+  .unitinput2 {
+    width: 55px;
+  }
+
+  .table-2 {
+    border-collapse: collapse;
+    width: 10%;
+    text-align: center;
+
+  }
+
+  .table-2 td {
+    padding: 20px;
+    text-align: left;
+  }
+  
+}
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+/* THIS IS WHERE THE RESPONSIVE DESIGND BEGINS*/
+@media screen and (max-width: 550px) {
+
+  /*Index.html*/
+
+  .style-header {
+    height: 0.5em;
+    margin-bottom: 60%;
+    font-size: 18px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-align: center;
+
+  }
+
+  .style {
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    margin-left: 0;
+  }
+
+  div #registration-form {
+
+    line-height: 1.5;
+    margin-bottom: 25%;
+    display: inline-block;
+    font-size: 12px;
+
+  }
+
+  .description {
+    font-size: 12px;
+    display: flexbox;
+    justify-content: center;
+  }
+
+  #registration-form h3 {
+    font-size: 15px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    text-align: center;
+    display: inline-block;
+  }
+
+  /*Calculations.html*/
+  div>#load-content {
+    text-align: center;
+
+  }
+
+  #load-content {
+    width: 100%;
+    height: 400px;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    float: none;
+    visibility: visible;
+    line-height: 1.2;
+    padding-left: 0px;
+  }
+
+  #load-content p {
+    padding-left: 0px;
+  }
+
+  .message {
+    font-size: 13px;
+  }
+
+  .flex-list {
+    margin-bottom: 100px;
+    margin-bottom: 180px;
+  }
+
+  .flex-list li {
+
+    font-size: 12px;
+  }
+
+
+  .form-container {
+    height: 0px;
+
+  }
+
+  th,
+  td {
+    padding: 40px;
+    font-size: 13px;
+  }
+
+  .table-1 {
+    border-collapse: collapse;
+    width: 60%;
+  }
+
+  #continue {
+    width: 30%;
+    font-size: 10px;
+  }
+
+  /*/*This button connects calculate.html with the index.html*/
+  #go-back {
+    display: none;
+  }
+
+  a .submit-order,
+  a .recalculate {
+
+    width: 13%;
+    font-size: 13px;
+
+  }
+
+  form>.order-button {
+    width: 1050px;
+    height: 100px;
+    display: flexbox;
+    align-content: flex-end;
+
+  }
+
+
+  .style-footer {
+    height: 30px;
+    margin-top: 200px;
+    font-size: 12px;
+    padding-left: 0px;
+    width: 300px;
+} 
+
+  /** Order.html*/
+
+  .input-box,
+  .color {
+    font-size: 14px;
+  }
+
+  .unitinput,
+  .unitinput2 {
+    width: 55px;
+  }
+
+  .table-2 {
+    border-collapse: collapse;
+    width: 10%;
+    text-align: center;
+
+  }
+
+  .table-2 td {
+    padding: 20px;
+    text-align: left;
+  }
+
+
+
+/** Approval */
+
+.approve {
+  padding: 0;
+  font-size: large;
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
+  margin-top: 10%;
+}}
