@@ -84,6 +84,7 @@ calculation which suggests how much you should order.
 * An educational video on how the calculations are ran.
 * An option to load measurements in kilos aside from the punds option.
 * The possibility to have users filling up their own information to run the system independently.
+* The total amount should not return with a negative value so this is something I would like to adjust with conditions. 
 
 
 ### Testing
@@ -142,6 +143,32 @@ I also tested the site with the Chrome and Firefox developer tools to simulate t
  ![Mobile-lighthouse](assets/images/lighthouse-mobile.png)
 
  ![Desktop-lighthouse](assets/images/lighthouse-desktop.png)
+
+ ## Deployment 
+ 
+* The site was deployed to GitHub pages. the steps to deploy are as follows: 
+
+  * In the GitHub repository, navigate to the settings tab
+  * Under the GitHub Pages from the source section drop-down menu, select the master branch 
+  * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+  The live link can be found here -- https://danpr1984.github.io/Analytical-Purchase.Order/
+
+
+ ### Content
+
+ * The page was conceptualized and structured by myself. As a restaurant owner and manager I am always trying to seek for opportunities to improve. I thought of this idea and wonder if it could be of any use for real operations. 
+ * The text was entirily written by myself and the logic of operations where written by myself. 
+ * I found a lot of suppor from the Code Institute Slack community as well as from https://stackoverflow.com/ and https://www.w3schools.com/.
+
+
+
+ ### Media
+
+ * The note book used as a logo was imported from Microsoft Word public images library
+ * The chef that walks you through the page and explains you what to do is from: https://clubpenguin.fandom.com/wiki/Swedish_Chef
+ * The font used for the header comes from: https://fonts.google.com/
+
 
 
 
