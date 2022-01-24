@@ -62,6 +62,12 @@ calculation which suggests how much you should order.
 
 
 
+### Order Generated Page
+
+* This page shows a confirmation message that your order has been approved and that an email has been sent to the manager in charge of approving the order. It also generates an order number when the page loads. In the future the orders generated will have a proper numeric system in order to be able to keep track. 
+
+![Approval!](assets/images/approval-js.png)
+
 
  
 
