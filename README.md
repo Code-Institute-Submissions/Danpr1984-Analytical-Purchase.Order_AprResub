@@ -133,6 +133,17 @@ I also tested the site with the Chrome and Firefox developer tools to simulate t
 * Approval.js ![order.js!](assets/images/js-hint3.png) 
 
 
+### Lighthouse
+
+* I have used the developer tools lighthouse option to create reports to measure different indicators for both mobile and desktop.
+
+* For both reports, the accessibility score was of 100 on the login and approval pages but of 89 when testing in the pages with tables. I tried to follow the suggestions but they came as an error on the W3C Validator so this is something to improve. 
+
+ ![Mobile-lighthouse](assets/images/lighthouse-mobile.png)
+
+ ![Desktop-lighthouse](assets/images/lighthouse-desktop.png)
+
+
 
 
  
