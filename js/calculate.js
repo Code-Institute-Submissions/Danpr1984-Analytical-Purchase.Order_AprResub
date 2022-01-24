@@ -22,10 +22,10 @@
     window.location = 'order.html?shoppingList=' + shoppingList;
 
 
-};
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(function () {
         document.getElementById("load-content").style.visibility = "visible";
     }, 2500);
-})
+});
