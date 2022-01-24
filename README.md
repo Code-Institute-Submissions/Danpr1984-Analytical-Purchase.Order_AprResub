@@ -68,6 +68,72 @@ calculation which suggests how much you should order.
 
 ![Approval!](assets/images/order-approved.png)
 
+### Common Features
+
+## Footer
+
+* The only common feature to all pages is the footer which contains a Copyright messsage.
+
+![Footer!](assets/images/copyright-footer.png)
+
+
+### Features Left to Implement
+
+* A nicer layout for the entire page.
+* A FAQ page.
+* An educational video on how the calculations are ran.
+* An option to load measurements in kilos aside from the punds option.
+* The possibility to have users filling up their own information to run the system independently.
+
+
+### Testing
+
+* For this project I considered the need to make the tool very efficient. Often I find pages very difficult to navigate and to get to the point of the product that is being offered. I was constantly running the operations on the chrome developer tools to see if the functions where connected properly. Since I wanted the results of the calculations to appear in a different page, I struggled a lot with finding the correct function to pass the values from one html and js files to another. I spent several days figuring this out until I found a solution in StackOverflow. I also had to change the position of some of the columns in order to improve the user experience. This also meant I had to change the Id's of many elements. 
+
+* In order to add the correct responsiveness I added media queries for three different sizes.
+
+* My goal is to make a more efficient document. I targetted the elements mainly by their Id's since I felt I could identify them better but I expect I can adjust the functions with for loops. 
+
+* Testing was performed with the following devices/browsers:
+  * MacBook Air computer: 1280 x 800 
+    * Google Chrome
+    * Firefox
+    * Microsoft Edge
+    * Kindle Fire HDX: 800 x 1200
+  * iPad Air: 1536 x 2048 display
+    * iOS Safari
+  * iPhone 11 x pro: 414 x 896 display
+    * iOS Safari
+
+I also tested the site with the Chrome and Firefox developer tools to simulate the display on other devices and test the responsiveness of the site.
+
+### Validator Testing
+
+* HTML 
+
+* No errors returned when passing through the official W3C Validator.
+
+* Index.html ![Index.html!](assets/images/w3c-validator1.png)
+* Calculations.html ![calc.html!](assets/images/w3cvalidator-2.png)
+* Order.html ![order.html!](assets/images/w3c-validator3.png)
+* Approval.html ![order.html!](assets/images/w3c-validator4.png)
+
+* CSS
+
+* No errors returned when passing through the official Jigsaw Validator.
+
+* Css Style ![order.html!](assets/images/jigsaw-validatorcss.png)
+
+* JavaScript
+
+* No errors returned when passing through the official JSHint Validator.
+
+* Calculate.js ![calc.js!](assets/images/jshint-1.png)
+* Order.js ![order.js!](assets/images/jshint-2.png)  
+* Approval.js ![order.js!](assets/images/js-hint3.png) 
+
+
+
 
  
 
