@@ -52,6 +52,17 @@ calculation which suggests how much you should order.
 ![Calculations!](assets/images/calculations-table1.png)
 
 
+### Order Created Page
+
+* This page will throw the information of fields filled up in the calculation page and place them automatically. The table below will show the results of the arithmetic operations generated as a consequence of  filling up the information on the calculation page. The table contains a lot of detailed information which are needed to be able to get the total amoount results. The tool will always need certain constant values in order to function. I declared these values in objects in order to execute the operations. This would be adapted to the information of different restaurant businesses. Below the table, the user will find two buttons. One the offers to create a new order and the second button offers to submit the order. By clicking this button an order will be generated and sent for approval (this feature is not working at the moment. It only takes you to another page for demo).
+
+![Automatedfields!](assets/images/automated-infop2.png)
+
+![Results!](assets/images/calculations-table2.png)
+
+
+
+
  
 
   
