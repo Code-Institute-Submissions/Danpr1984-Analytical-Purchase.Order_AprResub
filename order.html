@@ -16,7 +16,7 @@
 <body>
     <header class="style-header">
         <div class="style">
-            <h3>The Purchase Helper</h1>
+            <h1>The Purchase Helper</h1>
                 <img src="./assets/images/purchase-helper2.png" alt="a notebook and a pencil">
         </div>
     </header>
@@ -24,9 +24,9 @@
         <ul class="flex-list" id="second-list">
 
             <li><label for="start-2">Order From:<input type="date" id="start-date2" name="start-2" class="text"
-                        class="date-p2" disabled></label>
-                <label for="end-2">To:<input type="date" id="end-date2" name="name-2" class="date-p2" class="text"
-                         disabled> </label></li>
+                        disabled></label>
+                <label for="end-2">To:<input type="date" id="end-date2" name="name-2"  class="text"
+                        disabled> </label></li>
 
             <li><label for="guests-numberp2">Expected number of guests:</label>
                 <input type="number" class="text" names="guests-numberp2" id="guests-numberp2" disabled></li>
@@ -35,14 +35,13 @@
 
         </ul>
         <div class="overview">
-            
+
             <p>Your order overview is ready!</p>
             <img src="./assets/images/little-chef.jpeg" alt="a chef"></span>
         </div>
-
     </div>
     <div>
-        <form action="" class="order-table">
+        <form class="order-table">
             <table class="table-2">
                 <thead>
                     <tr>
@@ -147,7 +146,6 @@
                                     max="20" disabled name="currency">$</span></td>
                         <td><span class="unitinput"><input type="number" class="input-box" id="operand8-ribeye" min="0"
                                     max="20" disabled name="currency">$</span></td>
-
                     </tr>
                     <tr>
                         <td>
@@ -162,22 +160,16 @@
                     </tr>
 
                 </tbody>
-
-
             </table>
+
             <div class="order-button">
-                <a href="./calculate.html">
-                    <input type="button" name="continue" class="recalculate" value="Calculate New Order"></a>
-                <a href="./approval.html">
-                    <input type="button" name="submit-order" class="submit-order" value="Submit Order">
-                </a></td>
+                <a href="./calculate.html" class="recalculate">Calculate New Order</a>
+                <a href="./approval.html" class="submit-order">Submit Order</a>
             </div>
-
         </form>
-
     </div>
     <footer class="style-footer">
-        <p>&copy; Copyright 2022 All Rights Reserved</p>
+        <p>&copy; The Purchase Helper Copyright 2022 All Rights Reserved Created by Daniel Porras</p>
     </footer>
     <script src="assets/../js/order.js"></script>
 

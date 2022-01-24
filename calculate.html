@@ -16,102 +16,93 @@
 <body>
     <header class="style-header">
         <div class="style">
-            <h3>The Purchase Helper</h1>
-                <img src="./assets/images/purchase-helper2.png" alt="a notebook and a pencil">
+            <h1>The Purchase Helper</h1>
+            <img src="./assets/images/purchase-helper2.png" alt="a notebook and a pencil">
         </div>
     </header>
-
     <div id="load-content">
-       
         <p>Hi there! This is how The Purchase Helper works.</p>
-           <p> We make a series of calculations taking into consideration different parameters.  We check your selling history to identify the % share for every dish you are selling. We also anayze how much quantity of each product you add to every recipe. With that, we just add how many guests you are expecting to visit your business in a period of time and how much you have in your stock and Voilá! You will receive and automated calculation which suggests how much you should order! </p>
+        <p> We make a series of calculations taking into consideration different parameters. We check your selling
+            history to identify the % share for every dish you are selling. We also anayze how much quantity of each
+            product you add to every recipe. With that, we just add how many guests you are expecting to visit your
+            business in a period of time and how much you have in your stock and Voilá! You will receive and automated
+            calculation which suggests how much you should order! </p>
         <img src="./assets/images/little-chef.jpeg" alt="a chef">
     </div>
-    
-        <div class="form-container">
-            <a href="./index.html">
-                <label for="go-back"></label>
-                <input type="button" name="continue" id="go-back" value="Go Back">
-            </a>
-            <h3 class="form-style">Step 1</h3>
-            <p class="form-style" class="message">Please fill in the requested information to help you calculate your order</p>
-        </div>
-
-        <ul class="flex-list" id="first-list">
-            
+    <div class="form-container">
+        <a href="./index.html" id="go-back">Go Back
+        </a>
+        <h3 class="form-style">Step 1</h3>
+        <p class="form-style">Please fill in the requested information to help you calculate your order
+        </p>
+    </div>
+    <ul class="flex-list" id="first-list">
         <li>
-            <li><label for="start-date">Order From:<input type="date" id="start-date" name="start" class="text"
-                        required></label>
-                <label for="end-date">To:<input type="date" id="end-date" name="end" class="text" required></label>
-            </li>
-            <li><label for="guests-number" required>Expected number of guests:</label>
-                <input type="number" class="text" id="guests-number" required min="1"></li>
-            <li><label for="created-by">Order Created By:</label>
-                <input type="text" class="text" id="created-by" required></li>
-        </ul>
+        <li><label for="start-date">Order From:<input type="date" id="start-date" name="start" class="text"
+                    required></label>
+            <label for="end-date">To:<input type="date" id="end-date" name="end" class="text"></label>
+        </li>
+        <li><label for="guests-number">Expected number of guests:</label>
+            <input type="number" class="text" id="guests-number" min="1"></li>
+        <li><label for="created-by">Order Created By:</label>
+            <input type="text" class="text" id="created-by"></li>
+    </ul>
+    <div id="step-2">
+        <h3 class="form-style">Step 2</h3>
+        <p class="form-style">Tell us how much product you have on hand</p>
+        <table class=table-1>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Unit</th>
+                    <th>On Hand</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shrimp</td>
+                    <td>Lb</td>
+                    <td><label for="operand1-shrimp"></label><input type="number" class="input-box" 
+                            id="operand1-shrimp" required></td>
+                </tr>
+                <tr>
+                    <td>Red snapper filet</td>
+                    <td>Lb</td>
+                    <td><label for="operand1-redsnapper"></label><input type="number" class="input-box"
+                             id="operand1-redsnapper" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sea Bass</td>
+                    <td>Lb</td>
 
+                    <td> <label for="operand1-seabass"></label><input type="number" class="input-box" 
+                            id="operand1-seabass" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chicken</td>
+                    <td>Lb</td>
 
-        <div id="step-2">
-            <h3 class="form-style">Step 2</h3>
-            <p class="form-style" class="message">Tell us how much product you have on hand</p>
+                    <td><label for="operand1-chicken"></label><input type="number" class="input-box" 
+                            id="operand1-chicken" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3up Rib Eye</td>
+                    <td>Lb</td>
 
-            <table class=table-1>
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Unit</th>
-                        <th>On Hand</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Shrimp</td>
-                        <td>Lb</td>
-                        <label for="operand1-shrimp"></label>
-                        <td><input type="number" class="input-box" class="first-box" id="operand1-shrimp" required></td>
-                    </tr>
-                    <tr>
-                        <td>Red snapper filet</td>
-                        <td>Lb</td>
-                        <label for="operand1-redsnapper"></label>
-                        <td><input type="number" class="input-box" class="first-box" id="operand1-redsnapper" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Sea Bass</td>
-                        <td>Lb</td>
-                        <label for="operand-seabass"></label>
-                        <td><input type="number" class="input-box" class="first-box" id="operand1-seabass" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Chicken</td>
-                        <td>Lb</td>
-                        <label for="operand1-chicken"></label>
-                        <td><input type="number" class="input-box" class="first-box" id="operand1-chicken" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3up Rib Eye</td>
-                        <td>Lb</td>
-                        <label for="operand1-ribeye"></label>
-                        <td><input type="number" class="input-box" class="first-box" id="operand1-ribeye" required></td>
-                    </tr>
-                </tbody>
-
-            </table>
-
-            <button class="button" onclick="Continue()" id="continue">Calculate Order</button>
-
-        </div>
-    
-
+                    <td><label for="operand1-ribeye"></label><input type="number" class="input-box" 
+                            id="operand1-ribeye" required></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="button" onclick="Continue()" id="continue">Calculate Order</button>
+    </div>
     <footer class="style-footer">
-        <p>&copy; Copyright 2022 All Rights Reserved</p>
+        <p>&copy; The Purchase Helper Copyright 2022 All Rights Reserved Created by Daniel Porras</p>
     </footer>
-
-
-    <script src="assets/../js/index.js"></script>
+    <script src="assets/../js/calculate.js"></script>
 </body>
 
 </html>
