@@ -7,7 +7,7 @@
   buy too much. In both cases there are costs attached with having a wrong purchasing strategy. We have created an
   analytical tool that will help you calculate your orders in a more accurate way. Tell us how many guests you are expecting and how much product you have on hand and we will suggest you how you need to order.
 
-  I have personally experienced this since I am currently owner of three restaurant businesses. They all have a management team and a kitchen head and constantly they get the ordering incorrectly. This only affects businesses and clients in general. This is where I thought this could be a good idea. 
+  I have personally experienced this since I am currently owner of three restaurant businesses. They all have a management team and a kitchen head and constantly they get the ordering incorrectly. This only affects businesses and clients in general. This is why I thought this could be a good idea. 
   
  ![VIEWPORTS!](assets/images/multiple-devices.png)
 
@@ -24,22 +24,25 @@ business in a period of time and how much you have in your stock and Voilá! You
 calculation which suggests how much you should order.
 
 ### User Stories
-* As a user I want to easily find general information about the hotel.
-* As a user I want to easily find visual content that shows as much as possible about the facilities.
-* As a user I want to easily find out more about the hotel through social media icons that take me to different social media content where I can learn more about the hotel. 
-* As a user I want to easily contact through phone or email someone about booking a stay
-* As the organisation we want to promote direct bookings avoiding intermediaries.
-* As the organisation we want to promote our social media channels that offer almost infinite content.
-* As the organisation we want to be able to tell a nice story about what the Aáki Hotel experience is all about.
+* As a user I want to easily understand the information of what the page can do.
+* As a user I want to easily find an efficient path to test the tool.
+* As a user I want to see how this could be useful for my business.
+* As a user I want to find the page very easy for my team to use. 
+* As the organisation we want to tell how useful this tool can be for small and medium businesses
+* As the organisation we want to be reliable and offer real solutions to real management problems.
+
 
 
  ## Features
 
  
 
- ### Navigation
+ ### Login Page
 
- * The navigation bar features a common design across all pages displaying the logo on the left side and the navigation links on the center and right sides.
-  * The navigation bar includes links on the logo, Home, Rooms, Eat & Drink, and linkable social media icons and email address. The various title links head to their respective pages for easy navigation. 
-  * The navigation bar is fully responsive, for smaller screens, the format of the bar changes to a column orientation with the logo at the top centered on the page and the title links vertically aligned underneath. For tablets and screens in between there is a staggered change through the use of media queries in order to maximise its size.
-  * An underline appears on the active page as a visual indicator to the user as to which page they are currently on. With a line appearing underneath the text on hover to visually indicate to users that they are clickable.
+ * This page introduces you to the purchase order tool and explains you the concept. It also asks you to login and to run a demo to understand better how the page works. 
+
+ [Login!](assets/images/login-page.png)
+
+ 
+
+  
