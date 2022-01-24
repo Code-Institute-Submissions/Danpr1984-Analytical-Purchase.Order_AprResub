@@ -41,13 +41,13 @@ calculation which suggests how much you should order.
 
  * This page introduces you to the purchase order tool and explains you the concept. It also asks you to login and to run a demo to understand better how the page works. 
 
- [Login!](assets/images/login-page.png)
+ ![Login!](assets/images/login-page.png)
 
  ### Calculation Page
 
  * This page was built in a very straight forward way. When the page loads, a chef pops up to give you more information about how the Purchase Helper works. The idea is to fill up the information fields required, which is what I considered are the essential elements required to run calculations. A start and end dates are set to measure the amount of days you are placing an order for. Afterwards, a projection of clients in this period of time visiting your business is required. Then there is a Created By field and we pass to the On Hand table. Here the user will fill up how much of each product they have got on their stock. With the projection of guests and the on hand details, we can run the functions placed in the back with the "Calculate Order" button. This will call all the arithmetic operators placed in different functions in the JavaScript files. 
 
-[Login!] (assets/images/calculations-table1.png)
+![Login!] (assets/images/calculations-table1.png)
 
 
  
