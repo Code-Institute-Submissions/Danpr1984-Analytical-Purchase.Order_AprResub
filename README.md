@@ -154,6 +154,8 @@ I also tested the site with the Chrome and Firefox developer tools to simulate t
 
   The live link can be found here -- https://danpr1984.github.io/Analytical-Purchase.Order/
 
+  ## Credits
+
 
  ### Content
 
