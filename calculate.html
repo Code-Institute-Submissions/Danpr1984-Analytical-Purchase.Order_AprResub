@@ -32,76 +32,75 @@
             calculation which suggests how much you should order! </p>
         <img src="./assets/images/little-chef.jpeg" alt="a chef">
     </div>
-    <div class="form-container">
-        <a href="./index.html" id="go-back">Go Back
-        </a>
-        <h3 class="form-style">Step 1</h3>
-        <p class="form-style">Please fill in the requested information to help you calculate your order
-        </p>
-    </div>
-    <ul class="flex-list" id="first-list">
-        <li>
-        <li><label for="start-date">Order From:<input type="date" id="start-date" name="start" class="text"
-                    required></label>
-            <label for="end-date">To:<input type="date" id="end-date" name="end" class="text"></label>
-        </li>
-        <li><label for="guests-number">Expected number of guests:</label>
-            <input type="number" class="text" id="guests-number" min="1"></li>
-        <li><label for="created-by">Order Created By:</label>
-            <input type="text" class="text" id="created-by"></li>
-    </ul>
-    <div id="step-2">
-        <h3 class="form-style">Step 2</h3>
-        <p class="form-style">Tell us how much product you have on hand</p>
-        <table class=table-1>
-            <thead>
-                <tr>
-                    <th>Product</th>
-                    <th>Unit</th>
-                    <th>On Hand</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Shrimp</td>
-                    <td>Lb</td>
-                    <td><label for="operand1-shrimp"></label><input type="number" class="input-box" 
-                            id="operand1-shrimp" required></td>
-                </tr>
-                <tr>
-                    <td>Red snapper filet</td>
-                    <td>Lb</td>
-                    <td><label for="operand1-redsnapper"></label><input type="number" class="input-box"
-                             id="operand1-redsnapper" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Sea Bass</td>
-                    <td>Lb</td>
+        <div class="form-container">
+            <h3 class="form-style">Step 1</h3>
+            <p class="form-style">Please fill in the requested information to help you calculate your order
+            </p>
+        </div>
+        <ul class="flex-list" id="first-list">
+            <li>
+            <li><label for="start-date">Order From:<input type="date" id="start-date" name="start" class="text"
+                        required></label>
+                <label for="end-date">To:<input type="date" id="end-date" name="end" class="text"></label>
+            </li>
+            <li><label for="guests-number">Expected number of guests:</label>
+                <input type="number" class="text" id="guests-number" required min="1"></li>
+            <li><label for="created-by">Order Created By:</label>
+                <input type="text" class="text" required id="created-by"></li>
+        </ul>
+        <div id="step-2">
+            <h3 class="form-style">Step 2</h3>
+            <p class="form-style">Tell us how much product you have on hand</p>
+        </div>    
+            <table class=table-1>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Unit</th>
+                        <th>On Hand</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shrimp</td>
+                        <td>Lb</td>
+                        <td><label for="operand1-shrimp"></label><input type="number" class="input-box" 
+                                id="operand1-shrimp" min="0" required></td>
+                    </tr>
+                    <tr>
+                        <td>Red snapper filet</td>
+                        <td>Lb</td>
+                        <td><label for="operand1-redsnapper"></label><input type="number" class="input-box"
+                                id="operand1-redsnapper" min="0" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sea Bass</td>
+                        <td>Lb</td>
 
-                    <td> <label for="operand1-seabass"></label><input type="number" class="input-box" 
-                            id="operand1-seabass" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Chicken</td>
-                    <td>Lb</td>
+                        <td> <label for="operand1-seabass"></label><input type="number" class="input-box" 
+                                id="operand1-seabass" min="0" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chicken</td>
+                        <td>Lb</td>
 
-                    <td><label for="operand1-chicken"></label><input type="number" class="input-box" 
-                            id="operand1-chicken" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3up Rib Eye</td>
-                    <td>Lb</td>
+                        <td><label for="operand1-chicken"></label><input type="number" class="input-box" 
+                                id="operand1-chicken" min="0" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3up Rib Eye</td>
+                        <td>Lb</td>
 
-                    <td><label for="operand1-ribeye"></label><input type="number" class="input-box" 
-                            id="operand1-ribeye" required></td>
-                </tr>
-            </tbody>
-        </table>
-        <button class="button" onclick="Continue()" id="continue">Calculate Order</button>
-    </div>
+                        <td><label for="operand1-ribeye"></label><input type="number" class="input-box" 
+                                id="operand1-ribeye" min="0" value="" required></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit"  onclick="Continue()" id="continue" value="Calculate Order">
+        </div>
     <footer class="style-footer">
         <p>&copy; The Purchase Helper Copyright 2022 All Rights Reserved Created by Daniel Porras</p>
     </footer>

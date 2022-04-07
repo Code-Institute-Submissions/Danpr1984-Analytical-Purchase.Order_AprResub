@@ -1,6 +1,7 @@
 /*jshint esversion: 6 */
 /**
- * This function picks up the values from the calculate.html so they can be used to make operations with JavaScript files that will reflect in the forms in the order.html file
+ * This function picks up the values from the calculate.html so they can be used to make operations 
+ * with JavaScript files that will reflect in the forms in the order.html file
  */
 
  function Continue() {
