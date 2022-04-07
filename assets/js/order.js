@@ -1,33 +1,33 @@
 /*jshint esversion: 6 */
 
 const shrimp = {
-    share: 0.3,  //parts of 1 pound
-    weight: 6,  //in ounces
-    unitCost: 5 //in $$
+    share: 0.3,  
+    weight: 6,  
+    unitCost: 5 
 };
 
 const snapper = {
-    share: 0.2,   //parts of 1 pound
-    weight: 20, //in ounces
-    unitCost: 4 //in $$
+    share: 0.2, 
+    weight: 20, 
+    unitCost: 4 
 };
 
 const seabass = {
-    share: 0.2, //parts of 1 pound
-    weight: 6, //in ounces
-    unitCost: 4 //in $$
+    share: 0.2, 
+    weight: 6, 
+    unitCost: 4 
 };
 
 const chicken = {
-    share: 0.2, //parts of 1 pound
-    weight: 8, //in ounces
-    unitCost: 4 //in $$
+    share: 0.2, 
+    weight: 8,
+    unitCost: 4
 };
 
 const ribeye = {
-    share: 0.1, //parts of 1 pound
-    weight: 8, //in ounces
-    unitCost: 4 //in $$
+    share: 0.1, 
+    weight: 8, 
+    unitCost: 4 
 };
 
 let pound = 16; //ounces in a pound
