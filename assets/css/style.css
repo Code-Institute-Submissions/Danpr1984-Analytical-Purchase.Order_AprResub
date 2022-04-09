@@ -270,7 +270,9 @@ td {
   font-size: 10px;
 }
 
-
+.form-error-message {
+  color: red;
+}
 
 
 
@@ -318,7 +320,7 @@ td {
   /*Order.html*/
   .input-box,
   .color {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .unitinput,
@@ -365,10 +367,10 @@ td {
     width: 25%;
   }
 
-  .input-box,
+ /* .input-box,
   .color {
     font-size: 14px;
-  }
+  }*/
 
   .unitinput,
   .unitinput2 {
@@ -379,6 +381,12 @@ td {
    /* border-collapse: collapse;*/
     width: 100%;
     text-align: center;
+  }
+
+  .submit-order,
+  .recalculate {
+    width: 30%;
+    font-size: 13px;
   }
 
   /*.table-2 td {
@@ -513,10 +521,10 @@ td {
 
   /** Order.html*/
 
-  .input-box,
+  /*.input-box,
   .color {
     font-size: 14px;
-  }
+  }*/
 
   .unitinput,
   .unitinput2 {

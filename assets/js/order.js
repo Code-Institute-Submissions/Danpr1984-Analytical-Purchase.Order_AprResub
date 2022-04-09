@@ -30,7 +30,9 @@ const ribeye = {
     unitCost: 4 
 };
 
-let pound = 16; //ounces in a pound
+let pound = 16; 
+
+
 
 /**
  * This function should execute all the operations and show results automatically on the table in the order.html file
@@ -72,7 +74,6 @@ window.onload = function() {
     document.getElementById('operand2-seabass').value = shoppingList[6];
     document.getElementById('operand2-chicken').value = shoppingList[7];
     document.getElementById('operand2-ribeye').value = shoppingList[8];
-
 }
 
 /**
@@ -146,23 +147,45 @@ function totalOrder() {
 
     let operand6Shrimp = document.getElementById("operand5-shrimp").value;
     operand6Shrimp -= document.getElementById("operand2-shrimp").value;
-    document.getElementById("operand6-shrimp").value = operand6Shrimp;
+    if (operand6Shrimp > 0) {
+        document.getElementById("operand6-shrimp").value = operand6Shrimp;
+    } else {
+        document.getElementById("operand6-shrimp").value = 0
+    }    
 
     let operand6Snapper = document.getElementById("operand5-redsnapper").value;
     operand6Snapper -= document.getElementById("operand2-redsnapper").value;
-    document.getElementById("operand6-redsnapper").value = operand6Snapper;
+    if (operand6Snapper > 0) {
+        document.getElementById("operand6-redsnapper").value = operand6Snapper;
+    } else {
+        document.getElementById("operand6-redsnapper").value = 0
+    }    
 
     let operand6Seabass = document.getElementById("operand5-seabass").value;
     operand6Seabass -= document.getElementById("operand2-seabass").value;
-    document.getElementById("operand6-seabass").value = operand6Seabass;
+    if (operand6Seabass > 0) {
+        document.getElementById("operand6-seabass").value = operand6Seabass;
+    } else {
+        document.getElementById("operand6-seabass").value = 0
+    }
 
     let operand6Chicken = document.getElementById('operand5-chicken').value;
     operand6Chicken -= document.getElementById("operand2-chicken").value;
-    document.getElementById("operand6-chicken").value = operand6Chicken;
+    if (operand6Chicken > 0) {
+        document.getElementById("operand6-chicken").value = operand6Chicken;
+    } else {
+        document.getElementById("operand6-chicken").value = 0
+    }
+    
 
     let operand6Ribeye = document.getElementById('operand5-ribeye').value;
     operand6Ribeye -= document.getElementById("operand2-ribeye").value;
-    document.getElementById("operand6-ribeye").value = operand6Ribeye;
+    if (operand6Ribeye > 0) {
+        document.getElementById("operand6-ribeye").value = operand6Ribeye;
+    } else {
+        document.getElementById("operand6-ribeye").value = 0
+    }
+    
 
 }
 
@@ -205,7 +228,7 @@ function totalCost() {
     let operand7Ribeye = document.getElementById('operand6-ribeye').value;
     operand7Ribeye *= seabass.unitCost;
     document.getElementById("operand8-ribeye").value = operand7Ribeye;
-
+    
 }
 
 /**
@@ -215,4 +238,7 @@ function totalCost() {
 function totalOrderCost() {
     let totalAmount = parseInt(document.getElementById("operand8-shrimp").value) + parseInt(document.getElementById("operand8-redsnapper").value) + parseInt(document.getElementById("operand8-seabass").value) + parseInt(document.getElementById("operand8-chicken").value) + parseInt(document.getElementById("operand8-ribeye").value);
     document.getElementById("total-amount").value = totalAmount;
+    /*if (totalAmount == 0) {
+        alert ("You seem to be well stocked and don't need to purchase any products");
+      }*/
 }};
