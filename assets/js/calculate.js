@@ -29,10 +29,10 @@
     console.log(shoppingList)
     setTimeout(function () {
         window.location = 'order.html?shoppingList=' + shoppingList;
-    }
+    })
     
-
 }
+
 function checkForm(e) {
     e.preventDefault()
     let start = document.getElementById("start-date");
