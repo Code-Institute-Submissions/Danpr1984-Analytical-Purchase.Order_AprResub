@@ -58,8 +58,8 @@ function checkForm(e) {
             } 
             if (!field.checkValidity()) {
                 field.parentElement.insertBefore(errorSpan, field.nextSibling)
-                field.parentElement.lastElementChild.setAttribute('class', 'form-error-message')
-                field.parentElement.lastElementChild.innerText='This is not valid'    
+                field.parentElement.lastElementChild.setAttribute('class', 'form-error-message fafa-solid fa-square-xmark')
+                field.parentElement.lastElementChild.innerText= 'Invalid input'    
             }
         }
 
