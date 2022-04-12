@@ -14,17 +14,7 @@
     let operand1Seabass = document.getElementById('operand1-seabass').value;
     let operand1Chicken = document.getElementById('operand1-chicken').value;
     let operand1Ribeye = document.getElementById('operand1-ribeye').value;
-    console.log("gotvalues")
-
-    console.log(start)
-    console.log(end)
-    console.log(dishes)
-    console.log(createdBy)
-    console.log(operand1Shrimp)
-    console.log(operand1Snapper)
-    console.log(operand1Seabass)
-    console.log(operand1Chicken)
-    console.log(operand1Ribeye)
+    
     let shoppingList = [start, end, dishes, createdBy, operand1Shrimp, operand1Snapper, operand1Seabass, operand1Chicken, operand1Ribeye];
     console.log(shoppingList)
     setTimeout(function () {
@@ -51,16 +41,11 @@ function checkForm(e) {
         if (field.value && field.checkValidity()) {
             counter++
         } else {
-            if (!field.value) {
-                field.parentElement.insertBefore(errorSpan, field.nextSibling)
-                field.parentElement.lastElementChild.setAttribute('class', 'form-error-message')
-                field.parentElement.lastElementChild.innerText='This field needs a value'
-            } 
             if (!field.checkValidity()) {
                 field.parentElement.insertBefore(errorSpan, field.nextSibling)
-                field.parentElement.lastElementChild.setAttribute('class', 'form-error-message fafa-solid fa-square-xmark')
-                field.parentElement.lastElementChild.innerText= '*Required field'    
-            }
+                field.parentElement.lastElementChild.setAttribute('class', 'form-error-message')
+                field.parentElement.lastElementChild.innerText='*Required valid value'
+            } 
         }
 
     }

@@ -320,6 +320,7 @@ td {
 .form-error-message {
   color: #8c0808;
   display: inline-block;
+  
   height: 16px;
   width:fit-content;
   padding: 1px;
