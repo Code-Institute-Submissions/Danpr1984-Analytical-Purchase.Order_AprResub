@@ -44,10 +44,17 @@ body {
 
 .description {
   text-align: center;
-  width: 80%;
-  margin-left: 10%;
-  line-height: 1.5;
+  width: 60%;
+  margin: auto;
+  
   margin-bottom: 10%;
+
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.5;
+  border: dashed 0.5px rgba(236, 77, 77, 0.903);;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 #registration-form {
@@ -224,9 +231,10 @@ td {
 }
 
 .scroll {
-  font-size: 15px;
+  visibility: hidden;
+  font-size: 10px;
   font-style: italic;
-  background-color: rgba(236, 77, 77, 0.103);
+  background-color: rgba(236, 77, 77, 0.100);
 }
 
 .order-table {
@@ -390,6 +398,9 @@ td {
   .no-pad1 {
     padding-left: 20px;
   }
+
+  .scroll {
+    visibility:visible;
 }
 
 /* Responsive design max-width 850px*/
@@ -410,8 +421,6 @@ td {
   .logo {
     background-image: url('../images/purchase-helper.3.png');
     background-repeat: no-repeat;
-    width: 130px; 
-    height: 80px;
   } 
 
   #log-out {
@@ -434,7 +443,7 @@ td {
 
   /*order.html*/
   #second-list {
-    margin-top: 180px;
+    margin-top: 120px;
     margin-bottom: 90px;
   }
 
@@ -447,12 +456,11 @@ td {
   }
 
  /* .input-box,
-  .color {
+   {
     font-size: 14px;
   }*/
 
-  .unitinput,
-  .unitinput2 {
+  .unitinput {
     width: 55px;
   }
 
@@ -468,12 +476,6 @@ td {
     width: 30%;
     font-size: 13px;
   }
-
-  /*.table-2 td {
-    padding: 20px;
-    text-align: left;
-  }*/
-
 }
 
 /* Responsive design max-width 550px*/
@@ -534,7 +536,6 @@ td {
     visibility: visible;
     line-height: 1.2;
     padding-left: 0px;
-    
   }
 
   #load-content p {
@@ -542,8 +543,8 @@ td {
   }
 
   #first-list {
-    margin-top: 180px;
-    margin-bottom: 180px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
   #second-list {
@@ -570,10 +571,9 @@ td {
     margin-top: 2%;
   }
   #continue {
-    width: 27%;
+    width: 30%;
     font-size: 10px;
     margin-left: 77%;
-
   }
 
   #go-back {
@@ -601,7 +601,6 @@ td {
     height: 100px;
   }
 
-
   .style-footer {
     height: 30px;
     margin-top: 200px;
@@ -622,18 +621,14 @@ td {
     padding: 0;
   }
 
-  .unitinput,
-  .unitinput2 {
+  .unitinput  {
     width: 55px;
   }
 
-
   .table-2 {
-    
     font-size: 12px;
     text-align: center;
     margin: auto;
-
   }
 
   .table-2 td {
