@@ -92,6 +92,9 @@ calculation which suggests how much you should order.
 * The possibility to have users filling up their own information to run the system independently.
 * The total amount should not return with a negative value so this is something I would like to adjust with conditions. 
 
+### Bugs
+
+* I have some unfixed bugs from the validation input fields. The *Requried field message is only showing in the last element when the rest of fields remain empty. 
 
 ### Testing
 

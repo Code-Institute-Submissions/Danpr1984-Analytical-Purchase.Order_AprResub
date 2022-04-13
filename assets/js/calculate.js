@@ -43,8 +43,8 @@ function checkForm(e) {
         } else {
             if (!field.value)  {
                 field.parentElement.insertBefore(errorSpan, field.nextSibling);
-                field.parentElement.firstElementChild.setAttribute('class', 'form-error-message');
-                field.parentElement.firstElementChild.innerText ='*Required';
+                field.parentElement.lastElementChild.setAttribute('class', 'form-error-message');
+                field.parentElement.lastElementChild.innerText ='*Required';
             }
         }
 
