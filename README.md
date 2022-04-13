@@ -56,11 +56,17 @@ calculation which suggests how much you should order.
 
 * This page will throw the information of fields filled up in the calculation page and place them automatically. The table below will show the results of the arithmetic operations generated as a consequence of  filling up the information on the calculation page. The table contains a lot of detailed information which are needed to be able to get the total amoount results. The tool will always need certain constant values in order to function. I declared these values in objects in order to execute the operations. This would be adapted to the information of different restaurant businesses. Below the table, the user will find two buttons. One the offers to create a new order and the second button offers to submit the order. By clicking this button an order will be generated and sent for approval (this feature is not working at the moment. It only takes you to another page for demo).
 
+* For better design and user experience I have created  a scroll bar to see the order results on mobile devices. 
+
 ![Automatedfields!](assets/images/automated-infop2.png)
 
 ![Results!](assets/images/calculations-table2.png)
 
+![Scrollbar!](assets/images/scroll-order.png)
 
+### Validations
+
+* All input fields require input from the user in order to continue. For the calculations form, validations where added with Javascript. Styling is very basic so there is some margin of improvement here.
 
 ### Order Generated Page
 
@@ -79,7 +85,7 @@ calculation which suggests how much you should order.
 
 ### Features Left to Implement
 
-* A nicer layout for the entire page.
+* Add more navigation items to the nav bar
 * A FAQ page.
 * An educational video on how the calculations are ran.
 * An option to load measurements in kilos aside from the punds option.
@@ -138,7 +144,7 @@ I also tested the site with the Chrome and Firefox developer tools to simulate t
 
 * I have used the developer tools lighthouse option to create reports to measure different indicators for both mobile and desktop.
 
-* For both reports, the accessibility score was of 100 on the login and approval pages but of 89 when testing in the pages with tables. I tried to follow the suggestions but they came as an error on the W3C Validator so this is something to improve. 
+* For both reports, the accessibility score was of 100 on the login and approval pages but of 85 when testing in the pages with tables. I followed the recommendations suggested and added aria-label attributes to inputs so the accessibility scored high. 
 
  ![Mobile-lighthouse](assets/images/lighthouse-mobile.png)
 

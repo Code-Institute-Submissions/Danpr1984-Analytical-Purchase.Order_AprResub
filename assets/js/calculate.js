@@ -20,6 +20,7 @@ function Continue() {
     setTimeout(function () {
         window.location = 'order.html?shoppingList=' + shoppingList;
     });
+
 }
 
 function checkForm(e) {
@@ -40,10 +41,10 @@ function checkForm(e) {
         if (field.value && field.checkValidity()) {
             counter++;
         } else {
-            if (!field.checkValidity()) {
+            if (!field.value)  {
                 field.parentElement.insertBefore(errorSpan, field.nextSibling);
                 field.parentElement.firstElementChild.setAttribute('class', 'form-error-message');
-                field.parentElement.firstElementChild.innerText = '*Required';
+                field.parentElement.firstElementChild.innerText ='*Required';
             }
         }
 
