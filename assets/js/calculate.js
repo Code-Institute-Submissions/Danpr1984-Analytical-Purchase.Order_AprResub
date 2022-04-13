@@ -4,7 +4,7 @@
  * with JavaScript files that will reflect in the forms in the order.html file
  */
 
- function Continue() {
+function Continue() {
     let start = document.getElementById("start-date").value;
     let end = document.getElementById("end-date").value;
     let dishes = document.getElementById("guests-number").value;
@@ -14,17 +14,16 @@
     let operand1Seabass = document.getElementById('operand1-seabass').value;
     let operand1Chicken = document.getElementById('operand1-chicken').value;
     let operand1Ribeye = document.getElementById('operand1-ribeye').value;
-    
+
     let shoppingList = [start, end, dishes, createdBy, operand1Shrimp, operand1Snapper, operand1Seabass, operand1Chicken, operand1Ribeye];
-    console.log(shoppingList)
+    console.log(shoppingList);
     setTimeout(function () {
         window.location = 'order.html?shoppingList=' + shoppingList;
-    })
-    
+    });
 }
 
 function checkForm(e) {
-    e.preventDefault()
+    e.preventDefault();
     let start = document.getElementById("start-date");
     let end = document.getElementById("end-date");
     let dishes = document.getElementById("guests-number");
@@ -34,25 +33,25 @@ function checkForm(e) {
     let operand1Seabass = document.getElementById('operand1-seabass');
     let operand1Chicken = document.getElementById('operand1-chicken');
     let operand1Ribeye = document.getElementById('operand1-ribeye');
-    let errorSpan = document.createElement('span')
-    let form = [start, end, dishes, createdBy, operand1Shrimp, operand1Snapper, operand1Seabass, operand1Chicken, operand1Ribeye]
-    let counter = 0
+    let errorSpan = document.createElement('span');
+    let form = [start, end, dishes, createdBy, operand1Shrimp, operand1Snapper, operand1Seabass, operand1Chicken, operand1Ribeye];
+    let counter = 0;
     for (let field of form) {
         if (field.value && field.checkValidity()) {
-            counter++
+            counter++;
         } else {
             if (!field.checkValidity()) {
-                field.parentElement.insertBefore(errorSpan, field.nextSibling)
-                field.parentElement.lastElementChild.setAttribute('class', 'form-error-message')
-                field.parentElement.lastElementChild.innerText='*Required valid value'
-            } 
+                field.parentElement.insertBefore(errorSpan, field.nextSibling);
+                field.parentElement.firstElementChild.setAttribute('class', 'form-error-message');
+                field.parentElement.firstElementChild.innerText = '*Required';
+            }
         }
 
     }
-    if (counter==form.length) {
-        Continue()
+    if (counter == form.length) {
+        Continue();
     } else {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
     }
 }
 

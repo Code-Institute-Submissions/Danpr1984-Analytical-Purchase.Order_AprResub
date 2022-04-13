@@ -150,7 +150,7 @@ function totalOrder() {
     if (operand6Shrimp > 0) {
         document.getElementById("operand6-shrimp").value = operand6Shrimp;
     } else {
-        document.getElementById("operand6-shrimp").value = 0
+        document.getElementById("operand6-shrimp").value = 0;
     }    
 
     let operand6Snapper = document.getElementById("operand5-redsnapper").value;
@@ -158,7 +158,7 @@ function totalOrder() {
     if (operand6Snapper > 0) {
         document.getElementById("operand6-redsnapper").value = operand6Snapper;
     } else {
-        document.getElementById("operand6-redsnapper").value = 0
+        document.getElementById("operand6-redsnapper").value = 0;
     }    
 
     let operand6Seabass = document.getElementById("operand5-seabass").value;
@@ -166,7 +166,7 @@ function totalOrder() {
     if (operand6Seabass > 0) {
         document.getElementById("operand6-seabass").value = operand6Seabass;
     } else {
-        document.getElementById("operand6-seabass").value = 0
+        document.getElementById("operand6-seabass").value = 0;
     }
 
     let operand6Chicken = document.getElementById('operand5-chicken').value;
@@ -174,7 +174,7 @@ function totalOrder() {
     if (operand6Chicken > 0) {
         document.getElementById("operand6-chicken").value = operand6Chicken;
     } else {
-        document.getElementById("operand6-chicken").value = 0
+        document.getElementById("operand6-chicken").value = 0;
     }
     
 
@@ -183,7 +183,7 @@ function totalOrder() {
     if (operand6Ribeye > 0) {
         document.getElementById("operand6-ribeye").value = operand6Ribeye;
     } else {
-        document.getElementById("operand6-ribeye").value = 0
+        document.getElementById("operand6-ribeye").value = 0;
     }
     
 

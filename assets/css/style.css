@@ -1,13 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&family=Mochiy+Pop+P+One&display=swap');
-    
+
 
 body {
   font-family: Helvetica;
   padding: 8px;
   font-weight: 300;
   letter-spacing: .09em;
-  
 }
 
 .style-header a {
@@ -22,7 +20,7 @@ body {
 
 .style-header {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 #log-out {
@@ -32,8 +30,8 @@ body {
 .logo {
   background-image: url('../images/purchase-helper2.png');
   background-repeat: no-repeat;
-  width: 150px; 
-  height: 110px; 
+  width: 150px;
+  height: 110px;
 }
 
 .style {
@@ -46,13 +44,12 @@ body {
   text-align: center;
   width: 60%;
   margin: auto;
-  
   margin-bottom: 10%;
-
   font-size: 18px;
   font-style: italic;
   line-height: 1.5;
-  border: dashed 0.5px rgba(236, 77, 77, 0.903);;
+  border: dashed 0.5px rgba(236, 77, 77, 0.903);
+  ;
   border-radius: 20px;
   padding: 10px;
 }
@@ -101,7 +98,7 @@ input {
   height: 20px;
   width: 20px;
   text-align: center;
-  border-radius: 50%; 
+  border-radius: 50%;
   padding: 20px;
 }
 
@@ -109,7 +106,7 @@ input {
   padding-left: 40px;
 }
 
-/* This is the styling of the calculate.html file*/
+/* Styling calculate.html file*/
 
 
 .flex-list {
@@ -195,14 +192,15 @@ td {
   font-size: 18px;
   font-style: italic;
   line-height: 1.5;
-  border: dashed 0.5px rgba(236, 77, 77, 0.903);;
+  border: dashed 0.5px rgba(236, 77, 77, 0.903);
+  ;
   border-radius: 20px;
   padding: 10px;
 }
 
-/* This is the styling of the order.html file*/
+/* Styling order.html file*/
 
-.table-2  {
+.table-2 {
   border-collapse: collapse;
   width: 100%;
   text-align: center;
@@ -219,7 +217,7 @@ td {
   margin-left: 10px;
   width: 50px;
 }
-  
+
 .overview {
   padding-left: 40px;
 }
@@ -227,7 +225,7 @@ td {
 .fix-position {
   position: sticky;
   left: 0;
-  background-color:rgb(250, 246, 246);
+  background-color: rgb(250, 246, 246);
 }
 
 .scroll {
@@ -255,7 +253,6 @@ td {
 #total-amount {
   font-size: 18px;
   width: 50px;
-  
 }
 
 .unitinput {
@@ -265,10 +262,6 @@ td {
 .input-box {
   width: 40px;
   margin-right: 5px
-}
-
-.smaller {
-  width: 30px;
 }
 
 .recalculate,
@@ -295,8 +288,7 @@ td {
   margin-right: 40px;
 }
 
-
-/* This is the styling of the approval.html file*/
+/* Styling of approval.html file*/
 
 .approve {
   font-size: large;
@@ -304,6 +296,13 @@ td {
   width: 100%;
   line-height: 1.5;
   margin: 10% auto;
+}
+
+#order-number {
+  border-radius: 6px;
+  padding: 4px;
+  width: fit-content;
+  border: solid 0.5px rgba(236, 77, 77, 0.903);
 }
 
 /* Footer styling for all html.files*/
@@ -319,26 +318,19 @@ td {
 
 .form-error-message {
   color: #8c0808;
-  display: inline-block;
-  
-  height: 16px;
-  width:fit-content;
+  display: block;
+  height: 13px;
+  width: fit-content;
   padding: 1px;
-  margin-left: 1%;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 100;
 }
 
-
-
-/* THIS IS WHERE THE RESPONSIVE DESIGN BEGINS*/
-
-
-/* Responsive design max-width 1100px*/
+/* Responsive design max-width 1200px*/
 
 @media screen and (max-width: 1200px) {
 
-  /*Index.html*/
+
   .style-header {
     font-size: 25px;
   }
@@ -347,15 +339,11 @@ td {
     margin-left: 0;
   }
 
-  /*Calculation.html*/
-
-
   #load-content {
     visibility: hidden;
     margin-top: 5%;
     text-align: center;
     margin-right: 4%;
-    
   }
 
   #load-content p {
@@ -373,7 +361,6 @@ td {
     font-size: 12px;
   }
 
-  /*Order.html*/
   .input-box,
   .color {
     font-size: 12px;
@@ -401,250 +388,238 @@ td {
   }
 
   .scroll {
-    visibility:visible;
-}
-
-/* Responsive design max-width 850px*/
-
-@media screen and (max-width: 850px) {
-
-
-  .style-header  {
-    height: 0.3em;
-    margin-bottom: 35%;
-    text-align: center;
-  }
-
-  .style {
-    font-size: 18px;
-  }
-
-  .logo {
-    background-image: url('../images/purchase-helper.3.png');
-    background-repeat: no-repeat;
-  } 
-
-  #log-out {
-    padding: 40px;
-  }
-
-  /*Calculation.html*/
-  #load-content {
-    width: 90%;
-    height: 400px;
-    margin: 100px auto 50px;
-    float: none;
     visibility: visible;
-    line-height: 1.2;
   }
 
-  #first-list {
-    margin-top: 100px;
+  /* Responsive design max-width 850px*/
+
+  @media screen and (max-width: 850px) {
+
+
+    .style-header {
+      height: 0.3em;
+      margin-bottom: 35%;
+      text-align: center;
+    }
+
+    .style {
+      font-size: 18px;
+    }
+
+    .logo {
+      background-image: url('../images/purchase-helper.3.png');
+      background-repeat: no-repeat;
+    }
+
+    #log-out {
+      padding: 40px;
+    }
+
+    #load-content {
+      width: 90%;
+      height: 400px;
+      margin: 100px auto 50px;
+      float: none;
+      visibility: visible;
+      line-height: 1.2;
+    }
+
+    #first-list {
+      margin-top: 100px;
+    }
+
+    #second-list {
+      margin-top: 120px;
+      margin-bottom: 90px;
+    }
+
+    .page-top .flex-list {
+      margin-top: 3%;
+    }
+
+    #continue {
+      width: 25%;
+    }
+
+    .unitinput {
+      width: 55px;
+    }
+
+    .table-2 {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+      margin: auto 5%;
+    }
+
+    .submit-order,
+    .recalculate {
+      width: 30%;
+      font-size: 13px;
+    }
   }
 
-  /*order.html*/
-  #second-list {
-    margin-top: 120px;
-    margin-bottom: 90px;
-  }
+  /* Responsive design max-width 550px*/
 
-  .page-top .flex-list {
-    margin-top: 3%;
-  }
+  @media screen and (max-width: 550px) {
 
-  #continue {
-    width: 25%;
-  }
+    .table-2 {
+      margin-left: 50%;
+      margin-right: 50%;
+    }
 
- /* .input-box,
-   {
-    font-size: 14px;
-  }*/
+    .style-header {
+      height: 0.3em;
+      margin-bottom: 60%;
+      font-size: 14px;
+      text-align: center;
+    }
 
-  .unitinput {
-    width: 55px;
-  }
+    .style {
+      font-size: 14px;
+      gap: 0;
+    }
 
-  .table-2 {
-    border-collapse: collapse;
-    width: 100%;
-    text-align: center;
-    margin: auto 5%;
-  }
+    .style-footer {
+      margin: auto;
+    }
 
-  .submit-order,
-  .recalculate {
-    width: 30%;
-    font-size: 13px;
-  }
-}
+    div #registration-form {
+      line-height: 1.5;
+      margin-bottom: 25%;
+      display: inline-block;
+      font-size: 12px;
+    }
 
-/* Responsive design max-width 550px*/
+    .description {
+      font-size: 12px;
+    }
 
-@media screen and (max-width: 550px) {
+    .style-btn {
+      width: 45%
+    }
 
-  /*Index.html*/
-  .table-2  {
-    margin-left: 50%;
-    margin-right: 50%;
-  }
+    #registration-form h3 {
+      font-size: 15px;
+      margin-top: 20%;
+      margin-bottom: 10%;
+      text-align: center;
+      display: inline-block;
+    }
 
-  .style-header  {
-    height: 0.3em;
-    margin-bottom: 60%;
-    font-size: 14px;
-    text-align: center;
-  }
-  .style {
-    font-size: 14px;
-    gap: 0;
-  }
-  .style-footer {
-    margin: auto;
-}
+    #load-content {
+      width: 100%;
+      height: 400px;
+      margin: 200px auto 150px;
+      float: none;
+      visibility: visible;
+      line-height: 1.2;
+      padding-left: 0px;
+    }
 
-  div #registration-form {
-    line-height: 1.5;
-    margin-bottom: 25%;
-    display: inline-block;
-    font-size: 12px;
-  }
+    #load-content p {
+      padding: 5px;
+    }
 
-  .description {
-    font-size: 12px;
-  }
+    #first-list {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
 
-  .style-btn {
-    width:45%
-  }
+    #second-list {
+      margin-bottom: 180px;
+    }
 
-  #registration-form h3 {
-    font-size: 15px;
-    margin-top: 20%;
-    margin-bottom: 10%;
-    text-align: center;
-    display: inline-block;
-  }
+    .flex-list li {
+      font-size: 14px;
+    }
 
-  /*Calculations.html*/
+    th,
+    td {
+      padding: 40px;
+      font-size: 13px;
+    }
 
-  
-  #load-content {
-    width: 100%;
-    height: 400px;
-    margin: 200px auto 150px;
-    float: none;
-    visibility: visible;
-    line-height: 1.2;
-    padding-left: 0px;
-  }
+    .table-1 {
+      border-collapse: collapse;
+      width: 60%;
+    }
 
-  #load-content p {
-    padding: 5px;
-  }
+    .form-error-message {
+      font-size: 10px;
+      margin-top: 2%;
+    }
 
-  #first-list {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
+    #continue {
+      width: 30%;
+      font-size: 10px;
+      margin-left: 77%;
+    }
 
-  #second-list {
-    margin-bottom: 180px;
-  }
+    #go-back {
+      padding: 6px;
+      font-size: 8px;
+      border-radius: 50%;
+      width: fit-content;
+      height: fit-content;
+      margin-top: 5%;
+    }
 
-  .flex-list li {
-    font-size: 14px;
-  }
+    #log-out {
+      padding-top: 50px;
+      padding-left: 60px;
+      padding-right: 10px;
+    }
 
-  th,
-  td {
-    padding: 40px;
-    font-size: 13px;
-  }
+    .submit-order,
+    .recalculate {
+      width: 30%;
+      font-size: 13px;
+    }
 
-  .table-1 {
-    border-collapse: collapse;
-    width: 60%;
-  }
+    form>.order-button {
+      height: 100px;
+    }
 
-  .form-error-message {
-    font-size: 10px;
-    margin-top: 2%;
-  }
-  #continue {
-    width: 30%;
-    font-size: 10px;
-    margin-left: 77%;
-  }
+    .style-footer {
+      height: 30px;
+      margin-top: 200px;
+      font-size: 12px;
+      padding-left: 0px;
+      width: 300px;
+    }
 
-  #go-back {
-   padding: 6px;
-   font-size: 8px;
-   border-radius: 50%;
-   width:fit-content;
-   height:fit-content;
-   margin-top: 5%;
-  }
-  
-  #log-out {
-    padding-top: 50px;
-    padding-left: 60px;
-    padding-right: 10px;
-  }
+    #second-list {
+      margin-top: 0;
+      margin-bottom: 90px;
+    }
 
-  .submit-order,
-  .recalculate {
-    width: 30%;
-    font-size: 13px;
-  }
+    .page-top {
+      text-align: center;
+      padding: 0;
+    }
 
-  form>.order-button {
-    height: 100px;
-  }
+    .unitinput {
+      width: 55px;
+    }
 
-  .style-footer {
-    height: 30px;
-    margin-top: 200px;
-    font-size: 12px;
-    padding-left: 0px;
-    width: 300px;
-  }
+    .table-2 {
+      font-size: 12px;
+      text-align: center;
+      margin: auto;
+    }
 
-  /** Order.html*/
+    .table-2 td {
+      padding: 20px;
+      text-align: left;
+    }
 
-  #second-list {
-    margin-top: 0;
-    margin-bottom: 90px;
-  }
-
-  .page-top {
-    text-align: center;
-    padding: 0;
-  }
-
-  .unitinput  {
-    width: 55px;
-  }
-
-  .table-2 {
-    font-size: 12px;
-    text-align: center;
-    margin: auto;
-  }
-
-  .table-2 td {
-    padding: 20px;
-    text-align: left;
-  }
-
-  /** Approval */
-
-  .approve {
-    padding: 0;
-    font-size: large;
-    text-align: center;
-    width: 100%;
-    line-height: 1.5;
-    margin-top: 10%;
-  }
-}
+    .approve {
+      padding: 0;
+      font-size: large;
+      text-align: center;
+      width: 100%;
+      line-height: 1.5;
+      margin-top: 10%;
+    }
+  }}
